@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.zhongjiehuang.com/sitemap.xml
