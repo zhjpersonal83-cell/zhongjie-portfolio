@@ -1,0 +1,908 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-17",
+  "person": {
+    "name": {
+      "en": "Zhongjie Huang",
+      "zh": "黄中杰"
+    },
+    "name_latin": "Zhongjie Huang",
+    "name_chinese": "黄中杰",
+    "headline": {
+      "en": "Artificial intelligence. Thoughtful engineering.",
+      "zh": "人工智能研究，扎实的工程实践。"
+    },
+    "discipline": {
+      "en": "AI & Computer Science",
+      "zh": "人工智能与计算机科学"
+    },
+    "location": {
+      "en": "United Kingdom",
+      "zh": "英国"
+    },
+    "summary": {
+      "en": "I work across computer vision, machine learning evaluation and software development. My projects connect model experiments with usable systems, with particular attention to what the evidence supports and where it stops.",
+      "zh": "我的工作涉及计算机视觉、机器学习评估与软件开发。我关注如何将模型实验落实为可使用的系统，同时清楚说明证据能够支持什么，以及它的局限。"
+    },
+    "biography": {
+      "en": [
+        "I earned a BSc in Artificial Intelligence and Computer Science at the University of Sheffield in July 2025. I then studied its MSc Artificial Intelligence programme in 2025–2026. My MSc dissertation has been submitted; final results and the degree award remain pending as of 16 October 2026.",
+        "My undergraduate project combined a facial-expression classifier with a Java/Tomcat web application. My MSc dissertation examined how different cell-segmentation pipelines affect quantitative measurements and downstream prediction in oral histology.",
+        "Alongside academic work, I develop software prototypes and maintain this bilingual portfolio. I am exploring doctoral study and suitable research or engineering opportunities, bringing together implementation, careful evaluation and clear technical communication."
+      ],
+      "zh": [
+        "我于 2025 年 7 月获得谢菲尔德大学人工智能与计算机科学理学学士学位，随后于 2025–2026 年修读该校人工智能硕士课程。硕士论文已提交；截至 2026 年 10 月 16 日，最终成绩及学位授予仍待确认。",
+        "本科项目将面部表情分类模型与 Java/Tomcat 网页应用结合。硕士论文研究不同细胞分割流程如何影响口腔组织学图像的定量测量及下游预测。",
+        "在学术项目之外，我也开发软件原型并维护这份双语作品集。目前正在探索博士研究与适合的研究、工程岗位，希望将实现能力、审慎评估和清晰的技术交流结合起来。"
+      ]
+    },
+    "languages": {
+      "en": [
+        "Chinese",
+        "English — used in UK university study and technical communication"
+      ],
+      "zh": [
+        "中文",
+        "英语：用于英国大学学习及技术交流"
+      ]
+    }
+  },
+  "contact": {
+    "email": "zhuang68@sheffield.ac.uk",
+    "website": "https://www.zhongjiehuang.com/",
+    "linkedin": "https://www.linkedin.com/in/zhongjie-huang-11a19b423/",
+    "github": "https://github.com/zhjpersonal83-cell",
+    "message": {
+      "en": "For research discussions, doctoral opportunities or suitable engineering roles, please include a short outline and any relevant links in your email.",
+      "zh": "欢迎就研究交流、博士机会或适合的工程岗位联系。邮件中请简要说明主题，并附上相关链接。"
+    }
+  },
+  "education": [
+    {
+      "id": "msc",
+      "institution": {
+        "en": "University of Sheffield",
+        "zh": "谢菲尔德大学"
+      },
+      "degree": {
+        "en": "MSc Artificial Intelligence",
+        "zh": "人工智能理学硕士课程"
+      },
+      "period": {
+        "en": "2025–2026",
+        "zh": "2025–2026 年"
+      },
+      "status": "award_pending",
+      "status_label": {
+        "en": "Dissertation submitted · Award pending",
+        "zh": "论文已提交 · 学位待确认"
+      },
+      "description": {
+        "en": "Postgraduate study in machine learning, natural language processing, data science, scalable computing, GPU programming and professional practice.",
+        "zh": "研究生阶段学习涵盖机器学习、自然语言处理、数据科学、可扩展计算、GPU 编程与专业实践。"
+      },
+      "project": "histology-segmentation",
+      "note": {
+        "en": "Final results and the degree award were still pending in the latest verified records. No MSc classification is claimed.",
+        "zh": "最新核实的资料中，最终成绩及学位授予仍待确认；目前不列硕士学位等级。"
+      }
+    },
+    {
+      "id": "bsc",
+      "institution": {
+        "en": "University of Sheffield",
+        "zh": "谢菲尔德大学"
+      },
+      "degree": {
+        "en": "BSc Artificial Intelligence and Computer Science",
+        "zh": "人工智能与计算机科学理学学士"
+      },
+      "period": {
+        "en": "September 2021 – July 2025",
+        "zh": "2021 年 9 月 – 2025 年 7 月"
+      },
+      "status": "awarded",
+      "status_label": {
+        "en": "Awarded 1 July 2025 · Upper Second Class (2:1)",
+        "zh": "2025 年 7 月 1 日授予 · 二等一荣誉学位（2:1）"
+      },
+      "classification": "Class Two Division One Honours",
+      "award_date": "2025-07-01",
+      "description": {
+        "en": "Foundations in programming, algorithms, AI, robotics, security, distributed systems, computational modelling and software project work.",
+        "zh": "系统学习编程、算法、人工智能、机器人、安全、分布式系统、计算建模及软件项目实践。"
+      },
+      "project": "emotion-recognition",
+      "note": {
+        "en": "The original degree certificate is available in the credentials section.",
+        "zh": "学历凭证页面提供原始学位证书。"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "histology-segmentation",
+      "title": {
+        "en": "Cell segmentation & downstream evidence",
+        "zh": "细胞分割与下游预测证据"
+      },
+      "subtitle": {
+        "en": "MSc dissertation · Oral histology",
+        "zh": "硕士论文 · 口腔组织学图像"
+      },
+      "period": "2026",
+      "category": "research",
+      "status": "submitted",
+      "status_label": {
+        "en": "Dissertation submitted",
+        "zh": "论文已提交"
+      },
+      "summary": {
+        "en": "Comparing four segmentation pipelines to understand how cell measurements and prediction results change with the method used.",
+        "zh": "比较四条细胞分割流程，研究分割方法如何影响细胞测量与后续预测结果。"
+      },
+      "role": {
+        "en": "Individual MSc dissertation project",
+        "zh": "个人硕士论文项目"
+      },
+      "stack": [
+        "Python",
+        "QuPath",
+        "Cellpose-DINO",
+        "Cyto R-CNN",
+        "CSGO",
+        "Grouped evaluation"
+      ],
+      "sections": [
+        {
+          "heading": {
+            "en": "The question",
+            "zh": "研究问题"
+          },
+          "body": {
+            "en": "How much do downstream quantitative measurements and predictions depend on the cell-segmentation pipeline? The dissertation studied oral H&E histology, separating segmentation quality, morphology measurements and predictive utility.",
+            "zh": "细胞分割流程会在多大程度上影响后续定量测量和预测？论文围绕口腔 H&E 组织学图像，分别考察分割质量、形态学测量及预测效用。"
+          }
+        },
+        {
+          "heading": {
+            "en": "What I did",
+            "zh": "完成的工作"
+          },
+          "body": {
+            "en": "Compared QuPath, Cellpose-DINO, Cyto R-CNN and CSGO pipelines, examined their quantitative outputs, and assessed downstream models with attention to grouping and the independence of evaluation data.",
+            "zh": "比较 QuPath、Cellpose-DINO、Cyto R-CNN 与 CSGO 四条流程，分析它们产生的定量结果，并在下游模型评估中关注分组方式和评估数据的独立性。"
+          }
+        },
+        {
+          "heading": {
+            "en": "What the result supports",
+            "zh": "结果能够支持什么"
+          },
+          "body": {
+            "en": "The dissertation did not establish a clear gain from fusion over the image-only approach. This makes the distinction between a better segmentation output, more useful measurements and better predictions central to the interpretation.",
+            "zh": "论文未建立融合方案优于仅图像方案的明确证据。因此，需要区分分割输出更好、测量更有用与预测更准确这三个不同问题。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Research practice",
+            "zh": "研究方法"
+          },
+          "body": {
+            "en": "The work emphasised comparable pipelines, traceable processing, grouped evaluation and explicit limitations. The portfolio presents a professional summary of that work; the dissertation itself and research data are not distributed here.",
+            "zh": "工作重点包括可比较的流程、可追溯的处理步骤、分组评估与明确的局限说明。作品集仅展示职业简介级摘要，不分发论文全文或研究数据。"
+          }
+        }
+      ],
+      "outcomes": {
+        "en": [
+          "A submitted MSc dissertation comparing four named pipelines.",
+          "A distinction between segmentation, quantitative morphology and predictive utility.",
+          "An analysis that reports the absence of a clear fusion improvement."
+        ],
+        "zh": [
+          "已提交的硕士论文，比较四条明确命名的分割流程。",
+          "分别讨论分割、定量形态学和预测效用。",
+          "如实报告未观察到明确的融合增益。"
+        ]
+      },
+      "limits": {
+        "en": [
+          "Dissertation submission is not a confirmed degree award or peer-reviewed publication.",
+          "No clinical readiness, diagnostic performance or generalisation beyond the studied setting is claimed.",
+          "No raw medical images, research datasets or private repository contents are published."
+        ],
+        "zh": [
+          "论文提交不等于已授予学位或已发表同行评审论文。",
+          "不宣称具备临床应用条件、诊断能力或已在研究场景外验证泛化能力。",
+          "不公开原始医学图像、研究数据集或非公开代码仓库内容。"
+        ]
+      },
+      "evidence": {
+        "en": "Supplied MSc dissertation, dated 30 September 2026, and the October 2026 application fact review.",
+        "zh": "依据所提供的 2026 年 9 月 30 日硕士论文及 2026 年 10 月申请事实核对资料。"
+      },
+      "original_title": {
+        "en": "Automated Extraction of Quantitative Data from Histology Images",
+        "zh": "组织学图像定量数据的自动提取"
+      }
+    },
+    {
+      "id": "emotion-recognition",
+      "title": {
+        "en": "Emotion recognition using visual information",
+        "zh": "基于视觉信息的表情识别"
+      },
+      "subtitle": {
+        "en": "Completed BSc project · Computer vision",
+        "zh": "已完成本科项目 · 计算机视觉"
+      },
+      "period": "2025",
+      "category": "research",
+      "status": "completed",
+      "status_label": {
+        "en": "Completed BSc project",
+        "zh": "本科项目已完成"
+      },
+      "summary": {
+        "en": "A complete image-to-prediction workflow, linking a Swin Transformer model with a responsive Java/Tomcat web application.",
+        "zh": "将 Swin Transformer 模型与响应式 Java/Tomcat 网页应用连接，完成从图像输入到预测输出的完整流程。"
+      },
+      "role": {
+        "en": "Individual undergraduate project",
+        "zh": "个人本科毕业项目"
+      },
+      "stack": [
+        "Python",
+        "PyTorch",
+        "Swin Transformer",
+        "Java",
+        "Tomcat",
+        "HTML / CSS / JavaScript"
+      ],
+      "sections": [
+        {
+          "heading": {
+            "en": "The problem",
+            "zh": "解决的问题"
+          },
+          "body": {
+            "en": "Build an experimental application in which a user submits a facial image, the system validates and preprocesses it, a model estimates an expression category, and a clear interface returns the result.",
+            "zh": "构建一个实验性应用：用户提交面部图像，系统校验并预处理图像，模型估计表情类别，再通过清晰的界面返回结果。"
+          }
+        },
+        {
+          "heading": {
+            "en": "My contribution",
+            "zh": "个人贡献"
+          },
+          "body": {
+            "en": "Literature review, requirements analysis, architecture, front-end and server-side implementation, model integration, testing, results analysis and the final technical report.",
+            "zh": "完成文献综述、需求分析、架构设计、前后端实现、模型集成、测试、结果分析及最终技术报告。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Implementation",
+            "zh": "技术实现"
+          },
+          "body": {
+            "en": "The supplied report describes a Java/Tomcat application connected to a Python/PyTorch pipeline using a pretrained Swin Transformer. It discusses FER2013, RAF-DB and synthetic augmentation sources.",
+            "zh": "所提供的报告描述了连接 Python/PyTorch 流程的 Java/Tomcat 应用，使用预训练 Swin Transformer，并讨论 FER2013、RAF-DB 及合成增强数据来源。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Reported result",
+            "zh": "报告中的结果"
+          },
+          "body": {
+            "en": "The final report records 76.25% accuracy on its mixed test set. FER2013, RAF-DB and generated-image tests are separate experimental settings with different results; the mixed figure must not be relabelled as a single-dataset score. These are report-derived results, not independently reproduced measurements or estimates of a person’s internal emotional state.",
+            "zh": "最终报告记录的混合测试集准确率为 76.25%。FER2013、RAF-DB 与生成图像测试属于不同实验设置，结果各异，不能将混合测试数字改称某个单一数据集的成绩。这些数字来自原报告，本次未独立复现，也不能用于衡量一个人真实的内在情绪。"
+          }
+        }
+      ],
+      "outcomes": {
+        "en": [
+          "A working academic workflow covering interface, application logic and model inference.",
+          "Requirements, architecture, error handling and responsive interface documentation.",
+          "Model evaluation with confusion matrices and class-level discussion."
+        ],
+        "zh": [
+          "覆盖界面、应用逻辑与模型推理的学术项目流程。",
+          "包含需求、架构、错误处理和响应式界面的项目文档。",
+          "基于混淆矩阵及类别层面分析的模型评估。"
+        ]
+      },
+      "limits": {
+        "en": [
+          "Facial-expression labels are not direct measurements of internal emotion.",
+          "Dataset differences in pose, lighting, demographics and annotation affect generalisation.",
+          "The project is an academic demonstration; additional consent, validation and data controls would be needed for other settings."
+        ],
+        "zh": [
+          "面部表情标签不是对内在情绪的直接测量。",
+          "姿态、光照、人群及标注方式等数据差异会影响泛化。",
+          "该项目属于学术演示；其他应用场景仍需相应的同意、验证与数据管理措施。"
+        ]
+      },
+      "evidence": {
+        "en": "Supplied 2025 BSc final report.",
+        "zh": "依据所提供的 2025 年本科最终报告。"
+      }
+    },
+    {
+      "id": "marginloom",
+      "title": {
+        "en": "Marginloom - AI reliability workbench",
+        "zh": "Marginloom：AI 可靠性评估工作台"
+      },
+      "subtitle": {
+        "en": "Personal research prototype · Evaluation and human review",
+        "zh": "个人研究原型 · 模型评估与人工复核"
+      },
+      "period": "2026",
+      "category": "software",
+      "status": "prototype",
+      "status_label": {
+        "en": "Working personal prototype",
+        "zh": "可运行的个人原型"
+      },
+      "summary": {
+        "en": "An AI-assisted software prototype connecting prediction evaluation, calibration, selective prediction, human review and reproducible evidence reports.",
+        "zh": "使用 AI 辅助开发的软件原型，将预测评估、校准、选择性预测、人工复核与可重复生成的证据报告连接起来。"
+      },
+      "role": {
+        "en": "Personal research and software prototype, developed with AI assistance",
+        "zh": "个人研究与软件原型，使用 AI 辅助开发"
+      },
+      "stack": [
+        "React",
+        "TypeScript",
+        "Python",
+        "scikit-learn",
+        "SQLite / D1",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "repository": "https://github.com/zhjpersonal83-cell/marginloom",
+      "sections": [
+        {
+          "heading": {
+            "en": "The question",
+            "zh": "解决的问题"
+          },
+          "body": {
+            "en": "How can an evaluation workflow show which predictions to accept, which to review and what evidence supports the policy? Marginloom connects model outputs to inspectable metrics, review decisions and saved reports.",
+            "zh": "评估流程如何说明哪些预测可以接受、哪些需要复核，以及决策依据是什么？Marginloom 将模型输出与可检查的指标、复核决定和保存的报告连接起来。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Implemented workflow",
+            "zh": "已实现的流程"
+          },
+          "body": {
+            "en": "The repository implements temperature scaling, risk-coverage and threshold exploration, validated JSON prediction imports, saved run and policy snapshots, local ensemble inference, persisted review notes and JSON evidence exports. A separate companion experiment demonstrates segmentation on synthetic images.",
+            "zh": "仓库实现了温度缩放、风险与覆盖率分析、阈值探索、JSON 预测导入校验、运行与策略快照、本地集成模型推理、复核备注持久化及 JSON 证据导出。另有独立实验在合成图像上演示分割。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Engineering approach",
+            "zh": "工程实现"
+          },
+          "body": {
+            "en": "A React and TypeScript interface connects to typed API handlers and SQLite/D1 persistence. Python and scikit-learn produce reproducible baseline models and evaluation exports. Workspace boundaries, validation and audit records support the demonstration workflow.",
+            "zh": "React 与 TypeScript 界面连接类型化 API 及 SQLite/D1 持久化层。Python 与 scikit-learn 生成可复现的基线模型和评估结果。工作空间隔离、输入校验与审计记录支撑演示流程。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Evidence and scope",
+            "zh": "证据与范围"
+          },
+          "body": {
+            "en": "The public MIT-licensed repository includes source, model and prediction exports, documentation and tests. Its web, research and container GitHub Actions jobs passed on 4 October 2026 for the recorded verification commit. This portfolio update inspected those records; it did not rerun the complete prototype.",
+            "zh": "公开 MIT 许可仓库包含源码、模型与预测导出、文档及测试。记录的验证提交于 2026 年 10 月 4 日通过 web、research 与 container 三项 GitHub Actions 任务。本次作品集更新核实了这些记录，但未重新运行完整原型。"
+          }
+        }
+      ],
+      "outcomes": {
+        "en": [
+          "An inspectable prototype spanning evaluation, policy exploration and human review.",
+          "Public source, generated model artifacts and documented reproduction steps.",
+          "Recorded web, research and container checks for a specific October 2026 commit."
+        ],
+        "zh": [
+          "覆盖评估、策略探索及人工复核的可检查原型。",
+          "公开源码、生成的模型产物和复现步骤文档。",
+          "记录明确提交版本的网页、研究与容器检查结果。"
+        ]
+      },
+      "limits": {
+        "en": [
+          "A personal prototype developed with AI assistance, not evidence of a commercial business or customer deployment.",
+          "Demonstration datasets are generated or synthetic; no clinical validation or external production benchmark is claimed.",
+          "Historical checks do not certify every later change; browser file-saving and production readiness retain documented limitations."
+        ],
+        "zh": [
+          "使用 AI 辅助开发的个人原型，不代表已开展商业经营或已为客户部署。",
+          "演示数据为生成或合成数据，不宣称临床验证或外部生产环境基准成果。",
+          "历史检查不等于验证之后的每次修改；浏览器文件保存与生产应用准备仍有已记录的局限。"
+        ]
+      },
+      "evidence": {
+        "en": "Public repository README, package metadata and verification documentation, plus GitHub Actions run 37196645885; inspected 16 October 2026.",
+        "zh": "依据公开仓库 README、依赖信息、验证文档及 GitHub Actions 运行 37196645885；核实于 2026 年 10 月 16 日。"
+      },
+      "live_url": "https://marginloom.zhongjiehuang.com"
+    },
+    {
+      "id": "investment-financial-management",
+      "title": {
+        "en": "IAFM - Investment & financial management",
+        "zh": "IAFM：投资与财务管理"
+      },
+      "subtitle": {
+        "en": "Personal software project · Full-stack engineering",
+        "zh": "个人软件项目 · 全栈工程"
+      },
+      "period": {
+        "en": "Portfolio project",
+        "zh": "作品集项目"
+      },
+      "category": "software",
+      "status": "maintained",
+      "status_label": {
+        "en": "Working personal application",
+        "zh": "可运行的个人应用"
+      },
+      "summary": {
+        "en": "A Java application exploring structured financial records, validation, persistent storage and clear reporting interfaces.",
+        "zh": "以 Java 实现的应用，涉及结构化财务记录、校验、持久化存储与清晰的报告界面。"
+      },
+      "role": {
+        "en": "Personal software project",
+        "zh": "个人软件项目"
+      },
+      "stack": [
+        "Java",
+        "SQL",
+        "Domain modelling",
+        "Access control",
+        "Dashboard UX"
+      ],
+      "sections": [
+        {
+          "heading": {
+            "en": "Domain and workflows",
+            "zh": "领域与流程"
+          },
+          "body": {
+            "en": "Structured entities and workflows for accounts, transactions, positions and user-facing summaries. The public case study focuses on how a complex domain is organised into manageable application responsibilities.",
+            "zh": "围绕账户、交易、持仓及面向用户的汇总组织实体和流程。公开案例聚焦如何将复杂领域划分为可管理的应用职责。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Application engineering",
+            "zh": "应用工程"
+          },
+          "body": {
+            "en": "Layered Java design, persistence, input validation, access control and error handling, with separation between domain logic and presentation.",
+            "zh": "采用分层 Java 设计，涉及持久化、输入校验、访问控制及错误处理，将领域逻辑与界面展示分离。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Interface design",
+            "zh": "界面设计"
+          },
+          "body": {
+            "en": "Information hierarchy, filterable data views and understandable empty or error states help users interpret structured records.",
+            "zh": "通过信息层级、可筛选的数据视图及明确的空状态和错误状态，帮助用户理解结构化记录。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Evidence available",
+            "zh": "已有证据"
+          },
+          "body": {
+            "en": "The deployed application is available from the launch link. Sign in with an existing account to access personal financial records. The case study documents its architecture and workflows without publishing private accounts or operational data.",
+            "zh": "可通过入口访问已部署的应用，并使用已有账户登录查看个人财务记录。本案例介绍架构与工作流程，不公开私人账户或运行数据。"
+          }
+        }
+      ],
+      "outcomes": {
+        "en": [
+          "A case study in modelling a domain and implementing persistent workflows.",
+          "Experience connecting validation, application logic and reporting interfaces."
+        ],
+        "zh": [
+          "围绕领域建模与持久化工作流的工程案例。",
+          "连接校验、应用逻辑与报告界面的实践经验。"
+        ]
+      },
+      "limits": {
+        "en": [
+          "No returns, customer numbers, revenue or production reliability claims are made.",
+          "Private accounts, credentials, transactions and source code are not included.",
+          "This page describes software engineering, not financial advice or a public trading service."
+        ],
+        "zh": [
+          "不宣称投资回报、客户数量、收入或生产环境可靠性。",
+          "不包含私人账户、凭据、交易记录与源码。",
+          "此页面介绍软件工程，不提供投资建议或公开交易服务。"
+        ]
+      },
+      "evidence": {
+        "en": "Architecture and feature descriptions retained from the supplied portfolio v3.2.1.",
+        "zh": "依据所提供 v3.2.1 作品集中的架构及功能说明。"
+      },
+      "live_url": "https://iafm.zhongjiehuang.com"
+    }
+  ],
+  "skills": [
+    {
+      "id": "vision",
+      "title": {
+        "en": "Computer vision & image analysis",
+        "zh": "计算机视觉与图像分析"
+      },
+      "description": {
+        "en": "Image preprocessing, model integration, cell-segmentation pipeline comparison and interpretation of class-level or downstream results.",
+        "zh": "图像预处理、模型集成、细胞分割流程比较，以及类别层面或下游结果的解读。"
+      },
+      "tools": [
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "Swin Transformer",
+        "QuPath"
+      ],
+      "basis": {
+        "en": "BSc project and submitted MSc dissertation",
+        "zh": "本科项目与已提交硕士论文"
+      },
+      "path": "projects/histology-segmentation/"
+    },
+    {
+      "id": "evaluation",
+      "title": {
+        "en": "Evaluation & research practice",
+        "zh": "评估与研究方法"
+      },
+      "description": {
+        "en": "Baselines, grouping and leakage checks, error analysis, traceable experiments, literature synthesis and clear statements of limitations.",
+        "zh": "基线对比、分组与泄漏检查、错误分析、可追溯实验、文献综合，以及明确的局限说明。"
+      },
+      "tools": [
+        "Experimental design",
+        "Reproducibility",
+        "Technical reporting"
+      ],
+      "basis": {
+        "en": "Research projects and validation notes",
+        "zh": "研究项目与验证方法笔记"
+      },
+      "path": "insights/research-validation/"
+    },
+    {
+      "id": "software",
+      "title": {
+        "en": "Software & web engineering",
+        "zh": "软件与网页工程"
+      },
+      "description": {
+        "en": "Java application logic, persistent data models, interface design, validation, error handling and maintainable separation of concerns.",
+        "zh": "Java 应用逻辑、持久化数据模型、界面设计、校验、错误处理及可维护的职责划分。"
+      },
+      "tools": [
+        "Java",
+        "SQL",
+        "Tomcat",
+        "Git",
+        "Docker",
+        "Linux"
+      ],
+      "basis": {
+        "en": "Academic application and personal software projects",
+        "zh": "学术应用与个人软件项目"
+      },
+      "path": "projects/investment-financial-management/"
+    },
+    {
+      "id": "data",
+      "title": {
+        "en": "Data science & machine learning",
+        "zh": "数据科学与机器学习"
+      },
+      "description": {
+        "en": "Data preparation, exploratory analysis, statistical reasoning, model comparison and reproducible interpretation of results.",
+        "zh": "数据准备、探索性分析、统计推理、模型比较及可重复的结果解读。"
+      },
+      "tools": [
+        "Python",
+        "NumPy",
+        "pandas",
+        "Matplotlib",
+        "scikit-learn"
+      ],
+      "basis": {
+        "en": "Postgraduate coursework and project work",
+        "zh": "研究生课程与项目实践"
+      },
+      "path": "coursework/?area=Data+%26+statistics"
+    },
+    {
+      "id": "language",
+      "title": {
+        "en": "Language technologies",
+        "zh": "语言技术"
+      },
+      "description": {
+        "en": "Coursework in text processing, corpus preparation, language representation and NLP evaluation; an area of continuing research interest.",
+        "zh": "课程涵盖文本处理、语料准备、语言表示与 NLP 评估，也是持续关注的研究方向。"
+      },
+      "tools": [
+        "NLP",
+        "Text processing",
+        "Corpus analysis"
+      ],
+      "basis": {
+        "en": "Taught coursework and research preparation",
+        "zh": "所修课程与研究准备"
+      },
+      "path": "coursework/?area=Language+technology"
+    },
+    {
+      "id": "systems",
+      "title": {
+        "en": "Scalable & responsible computing",
+        "zh": "可扩展计算与负责任的计算实践"
+      },
+      "description": {
+        "en": "Academic grounding in parallel and GPU computing, scalable machine learning, security, distributed systems and professional responsibilities.",
+        "zh": "具备并行与 GPU 计算、可扩展机器学习、安全、分布式系统及专业责任方面的课程基础。"
+      },
+      "tools": [
+        "GPU concepts",
+        "Spark coursework",
+        "Systems design",
+        "Research ethics"
+      ],
+      "basis": {
+        "en": "Undergraduate and postgraduate coursework",
+        "zh": "本科及研究生课程"
+      },
+      "path": "coursework/"
+    },
+    {
+      "id": "reliability-workbench",
+      "title": {
+        "en": "Evaluation software & reproducible workflows",
+        "zh": "评估软件与可复现工作流"
+      },
+      "description": {
+        "en": "Connecting calibration, policy exploration, human review and saved evidence through typed interfaces and persistent application workflows.",
+        "zh": "通过类型化接口与持久化应用流程，连接校准、策略探索、人工复核及可保存的证据。"
+      },
+      "tools": [
+        "React",
+        "TypeScript",
+        "Python",
+        "SQLite",
+        "GitHub Actions"
+      ],
+      "basis": {
+        "en": "Marginloom personal prototype, developed with AI assistance",
+        "zh": "使用 AI 辅助开发的 Marginloom 个人原型"
+      },
+      "path": "projects/marginloom/"
+    }
+  ],
+  "interests": [
+    {
+      "title": {
+        "en": "Reliable visual segmentation under environmental and sensor shift",
+        "zh": "环境与传感器变化下的可靠视觉分割"
+      },
+      "question": {
+        "en": "When should a visual segmentation prediction be accepted or flagged as unreliable under changing conditions?",
+        "zh": "面对变化的条件，视觉分割预测何时可以接受，何时应标记为不可靠？"
+      },
+      "body": {
+        "en": "A proposed doctoral direction: investigate whether confidence calibration, feature novelty and perturbation sensitivity help identify unreliable segmentation predictions when data conditions change. These are future research questions, not completed experiments.",
+        "zh": "拟开展的博士研究方向：探索置信度校准、特征新颖性及扰动敏感性，是否有助于在数据条件变化时识别不可靠的分割预测。这些是未来研究问题，尚非已完成实验。"
+      },
+      "status_label": {
+        "en": "Proposed doctoral direction",
+        "zh": "拟开展的博士研究方向"
+      }
+    },
+    {
+      "title": {
+        "en": "Medical image analysis",
+        "zh": "医学图像分析"
+      },
+      "question": {
+        "en": "When do better image-processing outputs lead to more reliable measurements and useful predictions?",
+        "zh": "图像处理输出的改善，何时能转化为更可靠的测量与更有用的预测？"
+      },
+      "body": {
+        "en": "Cell segmentation, quantitative morphology, evaluation groups, domain differences and the relationship between upstream processing and downstream utility.",
+        "zh": "关注细胞分割、定量形态学、评估分组、领域差异，以及上游处理与下游效用之间的关系。"
+      }
+    },
+    {
+      "title": {
+        "en": "Emotion, context & multimodal evidence",
+        "zh": "情绪、语境与多模态证据"
+      },
+      "question": {
+        "en": "How should a model use context and communicate uncertainty when observable signals do not uniquely determine emotion?",
+        "zh": "当可观察信号无法唯一确定情绪时，模型应如何使用语境并表达不确定性？"
+      },
+      "body": {
+        "en": "Building from facial-expression work towards questions about dialogue, contextual information, explanations and carefully bounded interpretation.",
+        "zh": "从面部表情项目出发，进一步关注对话、上下文信息、解释及有边界的结果解读。"
+      }
+    },
+    {
+      "title": {
+        "en": "Reliable AI systems",
+        "zh": "可靠的人工智能系统"
+      },
+      "question": {
+        "en": "What evidence is needed before a model result can support a decision or a software workflow?",
+        "zh": "模型结果要支持决策或软件流程，需要哪些证据？"
+      },
+      "body": {
+        "en": "Baseline comparisons, reproducible evaluation, failure analysis, transparent uncertainty and practical interfaces for inspecting results.",
+        "zh": "关注基线比较、可重复评估、失败分析、透明的不确定性表达及便于检查结果的实际界面。"
+      }
+    },
+    {
+      "title": {
+        "en": "Computational modelling",
+        "zh": "计算建模"
+      },
+      "question": {
+        "en": "How can mechanistic assumptions and measured data be connected without confusing model fit with explanation?",
+        "zh": "如何连接机制假设与测量数据，同时避免将模型拟合等同于解释？"
+      },
+      "body": {
+        "en": "An additional area of interest informed by coursework and literature reading: individual-based models, sensitivity, uncertainty and multiscale reasoning.",
+        "zh": "基于课程和文献阅读形成的延伸兴趣：个体建模、敏感性、不确定性及多尺度推理。"
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "date": {
+        "en": "October 2026",
+        "zh": "2026 年 10 月"
+      },
+      "title": {
+        "en": "Doctoral applications and next steps",
+        "zh": "博士申请与后续方向"
+      },
+      "body": {
+        "en": "A Durham University PhD interview has been completed. The outcome remains pending as of this update. January 2027 is the proposed entry date, subject to admission and formal requirements.",
+        "zh": "已完成杜伦大学博士面试，截至本次更新仍等待结果。拟于 2027 年 1 月入学，仍取决于录取结果及后续正式要求。"
+      },
+      "status": "pending"
+    },
+    {
+      "date": {
+        "en": "2026",
+        "zh": "2026 年"
+      },
+      "title": {
+        "en": "MSc dissertation submitted",
+        "zh": "硕士论文已提交"
+      },
+      "body": {
+        "en": "Completed the dissertation work comparing cell-segmentation pipelines and downstream predictions. Final results and the degree award remain pending.",
+        "zh": "完成细胞分割流程及下游预测比较的论文工作并提交；最终成绩及学位授予仍待确认。"
+      },
+      "status": "submitted"
+    },
+    {
+      "date": {
+        "en": "September 2025",
+        "zh": "2025 年 9 月"
+      },
+      "title": {
+        "en": "Postgraduate study in artificial intelligence",
+        "zh": "开始人工智能研究生学习"
+      },
+      "body": {
+        "en": "Began the MSc Artificial Intelligence programme at the University of Sheffield.",
+        "zh": "开始修读谢菲尔德大学人工智能硕士课程。"
+      },
+      "status": "historical"
+    },
+    {
+      "date": {
+        "en": "1 July 2025",
+        "zh": "2025 年 7 月 1 日"
+      },
+      "title": {
+        "en": "BSc degree awarded",
+        "zh": "获得理学学士学位"
+      },
+      "body": {
+        "en": "Awarded the BSc in Artificial Intelligence and Computer Science with Class Two Division One Honours at the University of Sheffield.",
+        "zh": "获谢菲尔德大学人工智能与计算机科学理学学士学位，等级为二等一荣誉学位。"
+      },
+      "status": "awarded"
+    },
+    {
+      "date": {
+        "en": "September 2021",
+        "zh": "2021 年 9 月"
+      },
+      "title": {
+        "en": "Undergraduate study began",
+        "zh": "开始本科学习"
+      },
+      "body": {
+        "en": "Started the undergraduate programme in Artificial Intelligence and Computer Science at the University of Sheffield.",
+        "zh": "开始在谢菲尔德大学学习人工智能与计算机科学本科课程。"
+      },
+      "status": "historical"
+    }
+  ],
+  "current": {
+    "updated_label": {
+      "en": "Reviewed 16 October 2026",
+      "zh": "资料核对：2026 年 10 月 16 日"
+    },
+    "status_short": {
+      "en": "MSc dissertation submitted · Exploring doctoral and engineering opportunities",
+      "zh": "硕士论文已提交 · 探索博士研究与工程机会"
+    },
+    "focus": {
+      "en": [
+        "Following up doctoral applications and preparing for the next stage of research.",
+        "Consolidating computer vision, evaluation and software engineering project evidence.",
+        "Maintaining public code and a clear, current professional profile."
+      ],
+      "zh": [
+        "跟进博士申请，为下一阶段研究做准备。",
+        "整理计算机视觉、模型评估与软件工程项目证据。",
+        "维护公开代码及清晰、及时的职业资料。"
+      ]
+    },
+    "opportunities": {
+      "en": [
+        "Doctoral research with a strong fit to the questions outlined here.",
+        "Suitable research engineering, machine learning or software engineering roles.",
+        "Academic discussion and exchange around reproducible evaluation."
+      ],
+      "zh": [
+        "与这里列出的研究问题匹配的博士研究机会。",
+        "适合的研究工程、机器学习或软件工程岗位。",
+        "围绕可重复评估的学术讨论与交流。"
+      ]
+    },
+    "doctoral_direction": {
+      "title": {
+        "en": "Reliable visual segmentation under environmental and sensor shift",
+        "zh": "环境与传感器变化下的可靠视觉分割"
+      },
+      "summary": {
+        "en": "A proposed doctoral direction: investigate whether confidence calibration, feature novelty and perturbation sensitivity help identify unreliable segmentation predictions when data conditions change. These are future research questions, not completed experiments.",
+        "zh": "拟开展的博士研究方向：探索置信度校准、特征新颖性及扰动敏感性，是否有助于在数据条件变化时识别不可靠的分割预测。这些是未来研究问题，尚非已完成实验。"
+      },
+      "status_label": {
+        "en": "Proposed doctoral direction",
+        "zh": "拟开展的博士研究方向"
+      }
+    }
+  }
+}

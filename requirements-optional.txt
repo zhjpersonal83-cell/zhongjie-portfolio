@@ -1,0 +1,4 @@
+# Optional: only needed to regenerate the two public CV PDFs.
+# The website build, validation and packaging use the Python standard library.
+reportlab>=4.2,<5
+pypdf>=5,<7

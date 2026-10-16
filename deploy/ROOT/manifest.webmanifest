@@ -1,10 +1,17 @@
 {
-  "name": "Zhongjie Huang — AI & Computer Science",
-  "short_name": "ZH Portfolio",
+  "name": "Zhongjie Huang — Research & Engineering",
+  "short_name": "Zhongjie Huang",
   "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f5f7fb",
-  "theme_color": "#4f46e5",
-  "icons": [],
-  "scope": "./"
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#f7f6f2",
+  "theme_color": "#173f43",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }

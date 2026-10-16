@@ -1,0 +1,15 @@
+{
+  "version": "4.0.1",
+  "updated": "2026-10-17",
+  "base_url": "https://www.zhongjiehuang.com",
+  "default_language": "en",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "title": "Zhongjie Huang",
+  "description": {
+    "en": "Zhongjie Huang's research and engineering portfolio: computer vision, medical image analysis, reliable AI evaluation and software systems.",
+    "zh": "黄中杰的研究与工程作品集：计算机视觉、医学图像分析、可靠的人工智能评估与软件系统。"
+  }
+}

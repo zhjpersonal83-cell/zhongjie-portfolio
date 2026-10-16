@@ -1,0 +1,482 @@
+[
+  {
+    "code": "COM6018",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Data & statistics",
+    "title": {
+      "en": "Data Science with Python",
+      "zh": "Data Science with Python"
+    },
+    "description": {
+      "en": "Studied practical Python-based analysis, exploratory data analysis, statistical modelling, optimisation, robust data management and reproducible scientific analysis.",
+      "zh": "学习了基于 Python 的实用数据分析、探索性分析、统计建模、优化、稳健数据管理和可复现科学分析。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM6655",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Responsible computing",
+    "title": {
+      "en": "Professional Issues",
+      "zh": "Professional Issues"
+    },
+    "description": {
+      "en": "Studied legal, social, ethical and professional responsibilities in computing, including intellectual property, software liability, computer misuse and ethical decision-making.",
+      "zh": "学习了计算领域的法律、社会、伦理和职业责任，包括知识产权、软件责任、计算机滥用及伦理决策。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM6115",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Language technology",
+    "title": {
+      "en": "Text Processing",
+      "zh": "Text Processing"
+    },
+    "description": {
+      "en": "Worked with text corpora, quantitative text analysis, language representation and systems for processing large volumes of natural-language text.",
+      "zh": "接触文本语料库、量化文本分析、语言表示，以及处理大规模自然语言文本的系统。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM6509",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Machine learning",
+    "title": {
+      "en": "Machine Learning and Adaptive Intelligence",
+      "zh": "Machine Learning and Adaptive Intelligence"
+    },
+    "description": {
+      "en": "Studied statistical machine learning and probabilistic modelling, with attention to mathematical assumptions and the application of learning algorithms to real-world phenomena.",
+      "zh": "学习统计机器学习和概率建模，关注数学假设以及学习算法在现实问题中的应用。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM6521",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Scalable computing",
+    "title": {
+      "en": "Parallel Computing with Graphical Processing Units (GPUs)",
+      "zh": "Parallel Computing with Graphical Processing Units (GPUs)"
+    },
+    "description": {
+      "en": "Gained exposure to parallel programming concepts, GPU execution models, performance-aware implementation and the use of accelerators for computational workloads.",
+      "zh": "接触并行编程概念、GPU 执行模型、性能导向实现，以及加速器在计算任务中的使用。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM6012",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Scalable computing",
+    "title": {
+      "en": "Scalable Machine Learning",
+      "zh": "Scalable Machine Learning"
+    },
+    "description": {
+      "en": "Studied parallelisation, stochastic optimisation, Spark, Python/Scala exposure and deployment concepts for high-performance or cluster computing.",
+      "zh": "学习并行化、随机优化、Spark、Python/Scala，以及高性能或集群计算中的部署概念。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM6513",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Language technology",
+    "title": {
+      "en": "Natural Language Processing",
+      "zh": "Natural Language Processing"
+    },
+    "description": {
+      "en": "Studied core NLP concepts, models and algorithms, together with their strengths, limitations and applications.",
+      "zh": "学习自然语言处理的核心概念、模型和算法，以及它们的优势、限制和应用场景。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM6911",
+    "programme": "msc",
+    "level": "Postgraduate",
+    "area": "Collaboration",
+    "title": {
+      "en": "Team Project",
+      "zh": "Team Project"
+    },
+    "description": {
+      "en": "Practised team-based project scoping, requirements analysis, solution design, implementation, presentation and technical reporting.",
+      "zh": "实践团队项目范围界定、需求分析、方案设计、实现、展示与技术报告。"
+    },
+    "source": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025/artificial-intelligence-msc"
+  },
+  {
+    "code": "COM1002",
+    "programme": "bsc",
+    "level": "Year 1",
+    "area": "Foundations",
+    "title": {
+      "en": "Foundations of Computer Science",
+      "zh": "Foundations of Computer Science"
+    },
+    "description": {
+      "en": "Studied discrete and continuous mathematics for computing, including logic, proof, combinatorics, graphs, calculus, matrices and linear algebra.",
+      "zh": "学习计算机科学所需的离散与连续数学基础，包括逻辑、证明、组合数学、图论、微积分、矩阵和线性代数。"
+    },
+    "source": "https://www.sheffield.ac.uk/programmeregulationsfinder/unit?cal=ACAD+YR&code=COM1002&loc=SHEFFIELD&org=SHEFFIELD&start=28-Sep-2009&year=2016"
+  },
+  {
+    "code": "COM1003",
+    "programme": "bsc",
+    "level": "Year 1",
+    "area": "Software engineering",
+    "title": {
+      "en": "Java Programming",
+      "zh": "Java Programming"
+    },
+    "description": {
+      "en": "Developed experience in object-oriented programming with Java, program decomposition, data structures, debugging and maintainable implementation.",
+      "zh": "通过 Java 学习面向对象编程、程序分解、数据结构、调试与可维护实现。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM1005",
+    "programme": "bsc",
+    "level": "Year 1",
+    "area": "Artificial intelligence",
+    "title": {
+      "en": "Machines and Intelligence",
+      "zh": "Machines and Intelligence"
+    },
+    "description": {
+      "en": "Studied foundational ideas in artificial intelligence, intelligent behaviour, search, representation and the relationship between natural and machine intelligence.",
+      "zh": "学习人工智能基础、智能行为、搜索、知识表示，以及自然智能与机器智能之间的关系。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM1006",
+    "programme": "bsc",
+    "level": "Year 1",
+    "area": "Systems",
+    "title": {
+      "en": "Devices and Networks",
+      "zh": "Devices and Networks"
+    },
+    "description": {
+      "en": "Studied how computing devices, operating concepts and networks support communication, computation and end-to-end digital systems.",
+      "zh": "学习计算设备、操作系统概念与网络如何支撑通信、计算和端到端数字系统。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM1008",
+    "programme": "bsc",
+    "level": "Year 1",
+    "area": "Web engineering",
+    "title": {
+      "en": "Web and Internet Technology",
+      "zh": "Web and Internet Technology"
+    },
+    "description": {
+      "en": "Worked with web architecture, client–server interaction, standards-based front-end development and the technologies underlying internet applications.",
+      "zh": "接触 Web 架构、客户端—服务器交互、基于标准的前端开发，以及互联网应用的基础技术。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM1009",
+    "programme": "bsc",
+    "level": "Year 1",
+    "area": "Algorithms",
+    "title": {
+      "en": "Introduction to Algorithms and Data Structures",
+      "zh": "Introduction to Algorithms and Data Structures"
+    },
+    "description": {
+      "en": "Studied algorithmic problem solving, common data structures, correctness, complexity and implementation trade-offs.",
+      "zh": "学习算法问题求解、常见数据结构、正确性、复杂度和实现取舍。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "FCE1001",
+    "programme": "bsc",
+    "level": "Year 1",
+    "area": "Collaboration",
+    "title": {
+      "en": "Global Engineering Challenge Week",
+      "zh": "Global Engineering Challenge Week"
+    },
+    "description": {
+      "en": "Worked in an interdisciplinary team on an engineering challenge, developing problem framing, sustainable design, communication and collaborative decision-making.",
+      "zh": "在跨学科团队中处理工程挑战，培养问题界定、可持续设计、沟通和协作决策能力。"
+    },
+    "source": "https://www.sheffield.ac.uk/engineering/study/global-engineering-challenge-week"
+  },
+  {
+    "code": "COM2109",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Theory",
+    "title": {
+      "en": "Automata, Computation and Complexity",
+      "zh": "Automata, Computation and Complexity"
+    },
+    "description": {
+      "en": "Studied finite-state machines, formal languages, pushdown automata, Turing machines, computability and computational complexity.",
+      "zh": "学习有限状态机、形式语言、下推自动机、图灵机、可计算性与计算复杂度。"
+    },
+    "source": "https://www.sheffield.ac.uk/programmeregulationsfinder/unit?cal=ACAD+YR&code=COM2109&loc=SHEFFIELD&org=SHEFFIELD&start=24-Sep-2018&year=2018"
+  },
+  {
+    "code": "COM2108",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Software engineering",
+    "title": {
+      "en": "Functional Programming",
+      "zh": "Functional Programming"
+    },
+    "description": {
+      "en": "Studied functional programming principles, immutable data, higher-order functions, recursion, type-driven design and reasoning about programs.",
+      "zh": "学习函数式编程原则、不可变数据、高阶函数、递归、类型驱动设计和程序推理。"
+    },
+    "source": "https://www.sheffield.ac.uk/cs/research/groups/foundations-computation/foundations-computation-fox-coursesmodules"
+  },
+  {
+    "code": "FCE2001",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Professional practice",
+    "title": {
+      "en": "Engineering – You’re Hired",
+      "zh": "Engineering – You’re Hired"
+    },
+    "description": {
+      "en": "Completed an intensive team exercise centred on employability, project planning, commercial awareness, communication and professional presentation.",
+      "zh": "完成以就业能力、项目规划、商业意识、沟通和职业展示为核心的密集团队活动。"
+    },
+    "source": "https://www.sheffield.ac.uk/engineering/study/youre-hired"
+  },
+  {
+    "code": "COM2009",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Robotics",
+    "title": {
+      "en": "Robotics",
+      "zh": "Robotics"
+    },
+    "description": {
+      "en": "Studied sensing, control, perception and decision-making for autonomous systems, with practical attention to how software interacts with physical environments.",
+      "zh": "学习自主系统中的感知、控制、认知与决策，并关注软件如何与物理环境交互。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM21002",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Artificial intelligence",
+    "title": {
+      "en": "AI Group Project",
+      "zh": "AI Group Project"
+    },
+    "description": {
+      "en": "Worked collaboratively to scope, design, implement and communicate an AI-oriented software solution, balancing technical and team requirements.",
+      "zh": "协作完成 AI 导向软件方案的范围界定、设计、实现和沟通，并平衡技术与团队需求。"
+    },
+    "source": "https://www.sheffield.ac.uk/programmeregulationsfinder/unit?cal=SPR+SEM&code=COM21002&loc=SHEFFIELD&org=SHEFFIELD&start=06-Feb-2023&year=2023"
+  },
+  {
+    "code": "COM2107",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Theory",
+    "title": {
+      "en": "Logic in Computer Science",
+      "zh": "Logic in Computer Science"
+    },
+    "description": {
+      "en": "Studied formal logic, automated reasoning, decision procedures, temporal and modal logics, verification and type-system applications.",
+      "zh": "学习形式逻辑、自动推理、判定过程、时序与模态逻辑、验证和类型系统应用。"
+    },
+    "source": "https://www.sheffield.ac.uk/programmeregulationsfinder/unit?cal=SPR+SEM&code=COM2107&loc=SHEFFIELD&org=SHEFFIELD&start=04-Feb-2019&year=2018"
+  },
+  {
+    "code": "COM2004",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Data & statistics",
+    "title": {
+      "en": "Data Driven Computing",
+      "zh": "Data Driven Computing"
+    },
+    "description": {
+      "en": "Developed experience in extracting, cleaning, analysing and interpreting data, using computational and statistical methods to answer defined questions.",
+      "zh": "培养数据提取、清洗、分析和解释经验，使用计算与统计方法回答明确问题。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM2008",
+    "programme": "bsc",
+    "level": "Year 2",
+    "area": "Cybersecurity",
+    "title": {
+      "en": "Systems Design and Security",
+      "zh": "Systems Design and Security"
+    },
+    "description": {
+      "en": "Studied secure systems design, threat-aware engineering, access control, defensive thinking and the relationship between architecture and security properties.",
+      "zh": "学习安全系统设计、威胁导向工程、访问控制、防御性思维，以及架构与安全属性之间的关系。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM3610",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Research project",
+    "title": {
+      "en": "Dissertation Project: Emotion Recognition using Visual Information",
+      "zh": "Dissertation Project: Emotion Recognition using Visual Information"
+    },
+    "description": {
+      "en": "Completed an end-to-end computer-vision project covering literature review, requirements, architecture, model implementation, testing, evaluation, ethics and technical reporting.",
+      "zh": "完成端到端计算机视觉项目，涵盖文献综述、需求、架构、模型实现、测试、评估、伦理和技术报告。"
+    },
+    "source": "/projects/emotion-recognition/"
+  },
+  {
+    "code": "COM31007",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Mobile engineering",
+    "title": {
+      "en": "Software Development for Mobile Devices",
+      "zh": "Software Development for Mobile Devices"
+    },
+    "description": {
+      "en": "Studied mobile application design and implementation, including platform constraints, interface design, lifecycle considerations and device-aware development.",
+      "zh": "学习移动应用设计与实现，包括平台限制、界面设计、生命周期和设备适配开发。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM3110",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Language technology",
+    "title": {
+      "en": "Text Processing",
+      "zh": "Text Processing"
+    },
+    "description": {
+      "en": "Studied computational methods for processing text, including corpus preparation, text representation, analysis pipelines and evaluation.",
+      "zh": "学习文本处理的计算方法，包括语料准备、文本表示、分析流程和评估。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM3524",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Artificial intelligence",
+    "title": {
+      "en": "Bioinspired Computing",
+      "zh": "Bioinspired Computing"
+    },
+    "description": {
+      "en": "Studied computational methods inspired by natural systems, such as evolutionary search, swarm behaviour, neural computation and adaptation.",
+      "zh": "学习受自然系统启发的计算方法，例如进化搜索、群体行为、神经计算和自适应。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "MGT388",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Professional practice",
+    "title": {
+      "en": "Finance and Law for Engineers",
+      "zh": "Finance and Law for Engineers"
+    },
+    "description": {
+      "en": "Gained exposure to financial reasoning, commercial context and legal responsibilities relevant to engineering decisions. The title follows Sheffield’s historical programme regulations.",
+      "zh": "接触与工程决策相关的财务推理、商业环境和法律责任；课程名称依据谢菲尔德大学历史培养方案。"
+    },
+    "source": "https://www.sheffield.ac.uk/programmeregulationsfinder/ppio/567649"
+  },
+  {
+    "code": "COM3001",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Computational modelling",
+    "title": {
+      "en": "Modelling and Simulation of Natural Systems",
+      "zh": "Modelling and Simulation of Natural Systems"
+    },
+    "description": {
+      "en": "Studied differential-equation and individual-based approaches to dynamic natural systems, including assumptions, limitations, simulation and interpretation.",
+      "zh": "学习动态自然系统的微分方程与个体建模方法，包括假设、限制、仿真和解释。"
+    },
+    "source": "https://www.sheffield.ac.uk/programmeregulationsfinder/unit?cal=SPR+SEM&code=COM3001&loc=SHEFFIELD&org=SHEFFIELD&start=26-Sep-2005&year=2018"
+  },
+  {
+    "code": "COM3190",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Distributed systems",
+    "title": {
+      "en": "Theory of Distributed Systems",
+      "zh": "Theory of Distributed Systems"
+    },
+    "description": {
+      "en": "Studied models and reasoning techniques for concurrent and distributed computation, including coordination, communication, correctness and system-level trade-offs.",
+      "zh": "学习并发与分布式计算的模型和推理方法，包括协调、通信、正确性与系统级取舍。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "COM3240",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Machine learning",
+    "title": {
+      "en": "Adaptive Intelligence",
+      "zh": "Adaptive Intelligence"
+    },
+    "description": {
+      "en": "Studied adaptive decision-making and reinforcement-learning ideas, including agents, rewards, policies, value estimation, exploration and evaluation. The official historical title is Adaptive Intelligence.",
+      "zh": "学习自适应决策与强化学习概念，包括智能体、奖励、策略、价值估计、探索与评估；官方历史名称为 Adaptive Intelligence。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  },
+  {
+    "code": "MEC328",
+    "programme": "bsc",
+    "level": "Year 3",
+    "area": "Collaboration",
+    "title": {
+      "en": "Managing Engineering Projects and Teams",
+      "zh": "Managing Engineering Projects and Teams"
+    },
+    "description": {
+      "en": "Studied project planning, risk, team organisation, leadership, stakeholder communication and delivery in engineering contexts.",
+      "zh": "学习工程环境中的项目规划、风险、团队组织、领导力、利益相关者沟通和交付。"
+    },
+    "source": "https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-mcomp"
+  }
+]
