@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.0.2 · 2026-10-17
+
+- Added the matching GitHub source links to Marginloom and IAFM cards and case studies, preserving the full `Investment_and_Financial_Management` repository name.
+- Updated the IAFM case study to describe ten-currency reports, paired internal-transfer journals and server-controlled inflation maintenance without claiming independent security certification.
+- Kept the application domains, four project experiences and text-only emotion-recognition case study unchanged.
+- Refreshed the Chinese font subsets and both two-page CV PDFs for the updated profile text.
+- Passed 13,353 structural and deployment-copy checks. Verified HTTP 200 over HTTPS for the deployed portfolio homepage, both application case studies and both application entry URLs.
+- Clarified that earlier no-deployment statements refer to the original file-preparation stage, preserving historical evidence and its limits.
+
 ## 4.0.1 · 2026-10-17
 
 - Added direct Marginloom and IAFM launch links on English and Chinese homepage cards, project listings and case studies.

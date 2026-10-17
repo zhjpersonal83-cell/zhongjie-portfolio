@@ -1,4 +1,4 @@
-# Zhongjie Huang Portfolio · v4.0.1
+# Zhongjie Huang Portfolio · v4.0.2
 
 **网站更新日期：2026-10-17；原有学术资料核对日期：2026-10-16。** 中英双语个人研究与工程作品集，包含完整源码、可直接托管的静态页面、Tomcat WAR，以及中英文公开简历。
 
@@ -17,13 +17,15 @@
 | 查看测试结果 | `docs/TEST_REPORT.md` |
 | 查看内容更新与确认事项 | `docs/RELEASE_REVIEW_ZH.md` |
 
-本轮只准备文件，**没有执行服务器部署**。现成的 `site/` 和 WAR 不需要 Python、Node.js、数据库或前端构建环境来运行。
+v4.0.2 已于 2026-10-17 部署到 `https://www.zhongjiehuang.com`，首页、IAFM 与 Marginloom 项目详情页以及两个应用入口均核验返回 HTTP 200。早期 v4.0.0 文件交付阶段未部署服务器的记录属于历史验证范围。现成的 `site/` 和 WAR 不需要 Python、Node.js、数据库或前端构建环境来运行。
 
 ## 本版内容
 
 - 36 个 HTML 页面：18 个栏目或项目页面，各有对应的中英文版本。
 - 4 个项目案例：硕士组织学图像研究、本科表情识别、Marginloom、IAFM 投资与财务管理应用。
 - 首页和项目页面提供 [Marginloom](https://marginloom.zhongjiehuang.com) 与 [IAFM](https://iafm.zhongjiehuang.com) 的直接访问入口。
+- 两项目卡片和详情页提供对应源码入口：[marginloom](https://github.com/zhjpersonal83-cell/marginloom) 与 [Investment_and_Financial_Management](https://github.com/zhjpersonal83-cell/Investment_and_Financial_Management)。
+- IAFM 案例说明十币种报告、内部转账配对记账和服务端管理员通胀维护权限；不宣称获得独立安全认证。
 - 7 组有依据的能力分类，以及 32 门课程（8 门研究生课程、24 门本科课程）。
 - 独立的教育、研究、技能、近况、项目、课程、联系、简历与研究验证方法栏目。
 - 中英文 PDF 简历、可打印简历网页及公开个人资料 JSON 下载。
@@ -85,6 +87,6 @@ PDF 生成依赖仅用于更新简历；网站运行、静态构建与打包无�
 
 ## Verification
 
-The release includes structural validation and package consistency checks. The report records what actually ran. Browser rendering, real-device behaviour, Tomcat/nginx runtime behaviour and TLS configuration still need to be verified in the target hosting environment. No browser or server deployment was performed during this update.
+Version 4.0.2 passed 13,353 structural and deployment-copy checks. On 17 October 2026, the deployed portfolio homepage, the IAFM and Marginloom case-study pages, and both application entry URLs returned HTTP 200 over HTTPS. These checks establish the recorded entry-point availability, not every browser, device, route or server setting. Earlier no-deployment statements describe the original v4.0.0 file-preparation stage; its historical evidence remains in the release documents.
 
 The website is a static application with local CSS, JavaScript and images. Most content is generated from bilingual JSON. Client-side enhancements are isolated so unavailable storage or one failed feature does not prevent reading the profile.

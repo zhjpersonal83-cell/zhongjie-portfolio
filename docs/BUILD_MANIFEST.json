@@ -3,9 +3,14 @@
   "base_url": "https://www.zhongjiehuang.com",
   "files": [
     {
-      "bytes": 5242,
+      "bytes": 5960,
       "path": "README.md",
-      "sha256": "1abddbeb80fa93a07a5bbbe5f0031bdd48c31135c6c404cd24bc51b5333ea31e"
+      "sha256": "f53f934c10dab0ea028887bb8565ddfed7fa87111cfe71198f402ed0a496c2df"
+    },
+    {
+      "bytes": 6,
+      "path": "VERSION.txt",
+      "sha256": "c6d3fb057b198f1d0563d4218d4e36b48df752251aabffe78ea60aac5a72c7a2"
     },
     {
       "bytes": 254,
@@ -18,34 +23,34 @@
       "sha256": "84cac31280ef25d46f8ca4016c1e26891be0125d81ce50174a81b305826933bd"
     },
     {
-      "bytes": 849,
+      "bytes": 850,
       "path": "content/cv-build.json",
-      "sha256": "a65b17bb78c3af813496aeb7f916ec50e1ae69b304d15c00a82ec807c3a829aa"
+      "sha256": "87b7a89ce2d078a0a1657e47e9299bc28b837a68731329609cf159304f3ecd50"
     },
     {
-      "bytes": 41058,
+      "bytes": 41892,
       "path": "content/profile.json",
-      "sha256": "082e66bf858bb019da0c384497b96a211bb9a8e6c04179cc02282efe45918a34"
+      "sha256": "eb0a591f56194fccb901b2e9ce9773b3f90e659542d71e5e2d898f5c2a1a450b"
     },
     {
       "bytes": 509,
       "path": "content/site.json",
-      "sha256": "a9330b2fd5c41e5b68611453c051817cb231bd89db5b157098a868a5a53d0960"
+      "sha256": "18029d0f1566f86217822f35da469baab7a58edf47b6b2472c0c5c9483dcb82c"
     },
     {
-      "bytes": 1418626,
+      "bytes": 1427384,
       "path": "deploy/ROOT.war",
-      "sha256": "a57a04d7bb2074b08347b8aec26de2fed6c3b7c60a130698fddbc6fc63e7afed"
+      "sha256": "722e1ee8ca3ebdd82e09a1fdf5c22448c888bf6cb6a26db90a6fcf1c307867b5"
     },
     {
       "bytes": 9597,
       "path": "deploy/ROOT/404.html",
-      "sha256": "6feab226016cd87d960fe3cadd274a12cee07fe593811d7d45a26cc2612e4659"
+      "sha256": "50031a8375d69d02539cc7acee3741e951d809db28559dd705c4e076276a6f48"
     },
     {
       "bytes": 6,
       "path": "deploy/ROOT/VERSION.txt",
-      "sha256": "cd6321af37482f49efc326524a9fcd7fc86902a48da8d4bbd3dc718d290c3fea"
+      "sha256": "c6d3fb057b198f1d0563d4218d4e36b48df752251aabffe78ea60aac5a72c7a2"
     },
     {
       "bytes": 707,
@@ -55,7 +60,7 @@
     {
       "bytes": 11718,
       "path": "deploy/ROOT/about/index.html",
-      "sha256": "694a9a4af680b2ef7c53513fa195ed132f6dd515ee33a625db7f2411a8a37e32"
+      "sha256": "f08d8dec679b2984c4d6dff0643f7c2560c7107df530a877630297f692e85329"
     },
     {
       "bytes": 19988,
@@ -95,32 +100,32 @@
     {
       "bytes": 243,
       "path": "deploy/ROOT/build-info.json",
-      "sha256": "f9ad03df37ef5a5aa4307f8d5b8dbdd9462f96bc66e8fd605ebcf4a08b546476"
+      "sha256": "e357db8ed4292826cf9e0f1576544ef3c874c457bb8cbd4dd0e05b8eda320800"
     },
     {
       "bytes": 10009,
       "path": "deploy/ROOT/contact/index.html",
-      "sha256": "ffa7dcebc16b714f43b8155261eff7b664da71f79e95335bbcea47307e6665d7"
+      "sha256": "0ffb2966f6099eb87d56944fb45c84d319eafb40626c02eef093cc60df67208a"
     },
     {
       "bytes": 43652,
       "path": "deploy/ROOT/coursework/index.html",
-      "sha256": "bc53992c6d6dcbf99dcb2404fc2c5656b06e7d4527234548a74ae9da29503d37"
+      "sha256": "a94d3e71fcb72bc8fd5064c1bb7873f67acb9c103cb0bc54b930a619defb0be7"
     },
     {
-      "bytes": 14138,
+      "bytes": 14116,
       "path": "deploy/ROOT/cv/index.html",
-      "sha256": "c9b42d0be813fdc20fad7d4b04dd1d5d757eb674abc879e53da1e876d3457971"
+      "sha256": "2da7b51ef3202b3d17427fdb885ea6ea676fc0b2174eac2134b3fa1f8436a135"
     },
     {
       "bytes": 9465,
       "path": "deploy/ROOT/education/degree-credential/index.html",
-      "sha256": "ed56e880ef516cdfa27ea9e43e059d3a6efc67a7b1f934838d0fe49821e54dd5"
+      "sha256": "efe3772b02e7715d6841ea51f2e19f0e4cd8eb3a531a356acdea2106bee536a1"
     },
     {
       "bytes": 12036,
       "path": "deploy/ROOT/education/index.html",
-      "sha256": "7dc6d8b35c87fad81592cbb7425799d4ee49c075c7ce1e48999cc1e01f2f9042"
+      "sha256": "39d8c8168d821287da8df8ec63c71224b59ff4638ef30512e48844c3989e70f6"
     },
     {
       "bytes": 21159,
@@ -133,29 +138,29 @@
       "sha256": "3a1c5afda69264df17715098d05bb5ad24d8888676857c1a0ccff1b04f486087"
     },
     {
-      "bytes": 25985,
+      "bytes": 27438,
       "path": "deploy/ROOT/files/zhongjie-huang-cv-en.pdf",
-      "sha256": "53415ee2c8604666f002de6c1464427e532085e38d3a4ff45e214690a64af56f"
+      "sha256": "f13d0ce67371387f405cb81688ad47260c1bf9ceae4939f81703ea88cf0263a2"
     },
     {
-      "bytes": 98348,
+      "bytes": 104476,
       "path": "deploy/ROOT/files/zhongjie-huang-cv-zh.pdf",
-      "sha256": "52c62a91c831ff4f70ba45cbdc94a163409243918058f4f050771c31894259bd"
+      "sha256": "9be1402653eb4c180e96a9a9e8d6ed5711a4ab8caf4759ace2dfa938dde77be7"
     },
     {
-      "bytes": 41058,
+      "bytes": 41892,
       "path": "deploy/ROOT/files/zhongjie-huang-profile.json",
-      "sha256": "082e66bf858bb019da0c384497b96a211bb9a8e6c04179cc02282efe45918a34"
+      "sha256": "eb0a591f56194fccb901b2e9ce9773b3f90e659542d71e5e2d898f5c2a1a450b"
     },
     {
-      "bytes": 18490,
+      "bytes": 18796,
       "path": "deploy/ROOT/index.html",
-      "sha256": "6183b18ff0274c5a677f50ea0e7ee28e5640d46e39223a0baa4add0b42079b84"
+      "sha256": "23a03e9c743959cebd6d1a7a81f3dd48bfd307e1831856048c474995a1600c7e"
     },
     {
       "bytes": 11374,
       "path": "deploy/ROOT/insights/research-validation/index.html",
-      "sha256": "cdcbcd8dcde0285812db2d1cb1dbbf26bd51904584222227cc1996beccc6ccad"
+      "sha256": "2a9b15865c6757d70e59a8d551e0d2974d31aecffdb8bd2ca5ba010130bedde5"
     },
     {
       "bytes": 356,
@@ -165,42 +170,42 @@
     {
       "bytes": 10590,
       "path": "deploy/ROOT/now/index.html",
-      "sha256": "b09dec61369e525992c66ee88f7a826536727968d75b1b141b71cc153e355937"
+      "sha256": "d4fcc38a849dc89b2eb0029c01f2b572695a492b4e24a74f614994ba5eb6b424"
     },
     {
       "bytes": 9758,
       "path": "deploy/ROOT/privacy.html",
-      "sha256": "14b1dd6bdcb680e2adf80318fe903bbbbd4c006df971377dad179a8d5563def4"
+      "sha256": "f9d9e0f0e841be5462e03a8b1819f7289864ed586950c436ac6eb162a3f8f625"
     },
     {
       "bytes": 11710,
       "path": "deploy/ROOT/projects/emotion-recognition/index.html",
-      "sha256": "6bb3974332a1c2998f7a63d34d799f34022c47aa5b4d4b51bad0c69534ecefed"
+      "sha256": "80f682fbaff61c0023d9f33729cf2e9830c4c10061ec933f282b09c2696e03d6"
     },
     {
       "bytes": 11834,
       "path": "deploy/ROOT/projects/histology-segmentation/index.html",
-      "sha256": "5dc8875b47453acece676ea7066f9c74fc32e8264beaafb198a22605ef7f27f5"
+      "sha256": "a734b29254fdd1afa5a71a96f28b2c06e759338c8cb084eab37de8bd936e2053"
     },
     {
-      "bytes": 14936,
+      "bytes": 15251,
       "path": "deploy/ROOT/projects/index.html",
-      "sha256": "d4f1beed657a3f6cafe2be6b1471e7a31d824c822d0444319e2762d120cca408"
+      "sha256": "70deba51f9f26085e4f2f5551fdf5c1aa4fa2ef78d8b8aa176b6c134b2c62278"
     },
     {
-      "bytes": 11650,
+      "bytes": 12399,
       "path": "deploy/ROOT/projects/investment-financial-management/index.html",
-      "sha256": "5c9be077cd15a0a8e855530499e118563c0bba1e25d5d8c8de4fa4ec62f7a2fc"
+      "sha256": "1323eb226e97b7b19c30c3e337e042697009a4221277fdbb0a56b8ac6000805a"
     },
     {
       "bytes": 12596,
       "path": "deploy/ROOT/projects/marginloom/index.html",
-      "sha256": "19bdf9e4856f77db3b7e309579ff17ac6683129687ac86c05e51deb3ca2cf940"
+      "sha256": "7578b6da8f4a55b5a6ad52860373b44681bbed8048656fa82e64f67df0b275d6"
     },
     {
       "bytes": 14433,
       "path": "deploy/ROOT/research/index.html",
-      "sha256": "68de61510d0c3864f3285eab253f1187a546f40247fde6531b5f418676750753"
+      "sha256": "7d27c25753528e463fa2a681949a951cfda0d2b4dce467dace593060141c6ff1"
     },
     {
       "bytes": 74,
@@ -215,97 +220,97 @@
     {
       "bytes": 12943,
       "path": "deploy/ROOT/skills/index.html",
-      "sha256": "d60275cc3832468016479469523f499d942f397e85b4ee15b7f082ba301ab48c"
+      "sha256": "1114b53cfa40eadf5d9ac0f86a54ec17f14fc22774ab55780fc1bcd69ce1cec4"
     },
     {
       "bytes": 9619,
       "path": "deploy/ROOT/zh/404.html",
-      "sha256": "48afeac1c954d682736ac2a216f3c65040c425f032be4dee2c7bbedb8b7c9de9"
+      "sha256": "58016a3a5fcc94f7cf5235cf3feea23bb5a1285f536fff73c098a24bf513d66c"
     },
     {
       "bytes": 11376,
       "path": "deploy/ROOT/zh/about/index.html",
-      "sha256": "3b8da8663bf72af10ecb0d1c723df54622454f2dca7f28970cec217a0834ca2a"
+      "sha256": "a6c75355f6a73866ee8326b8dc6d48fe9e9f3826115dc372cf9689296b42d12c"
     },
     {
       "bytes": 9868,
       "path": "deploy/ROOT/zh/contact/index.html",
-      "sha256": "ee2aef626bc1007c3ecf69d110dd96e8cbf5695e0f5d3ad0ef0985ee77ad74c0"
+      "sha256": "0abec57f138a28ebc61f5e91c717b67eb95bb380a37241813c9490304b115df4"
     },
     {
       "bytes": 41513,
       "path": "deploy/ROOT/zh/coursework/index.html",
-      "sha256": "fd92b986f5c417db6d243a4773ea8409dc542476b94c5ba8d616b8e9fefd2762"
+      "sha256": "db44ea02daf1691476fba07a55cab59e4c7fa8c00e4c7e4ae8aa192e57fde10e"
     },
     {
       "bytes": 13594,
       "path": "deploy/ROOT/zh/cv/index.html",
-      "sha256": "4e4a8d054ff48de1836ce30733bf7f83e296f18382fffa2ee051e147862361b2"
+      "sha256": "5b72958c8236a80b93634937ec756db01efc59326f684f467cfd2d327ab37d37"
     },
     {
       "bytes": 9290,
       "path": "deploy/ROOT/zh/education/degree-credential/index.html",
-      "sha256": "f203250e9f1462dd057a7c8203409bfb88623f59036206c27fc19e6ef05962c5"
+      "sha256": "b0e52200d775f87a82af10811b77e1b6e23612e9dd4cf3bf169f91bca75dd283"
     },
     {
       "bytes": 11654,
       "path": "deploy/ROOT/zh/education/index.html",
-      "sha256": "a448409e8fc5e81c620c908f42949c784b908ca24d384a2b61e5cd78982a4a4f"
+      "sha256": "5f84475e3fab2a3f3bf0539eb493180bd8f07e579f52d23fc491ada0da4f00c3"
     },
     {
-      "bytes": 17978,
+      "bytes": 18294,
       "path": "deploy/ROOT/zh/index.html",
-      "sha256": "3af2a20d3c4d60f69f46d8bca22ee952ddf73a21122e5a0b1ece7083ed28db7b"
+      "sha256": "785655b8fa1ff689ae68b3145e2c7986760774c511d5abba7db146dac82bf84e"
     },
     {
       "bytes": 11164,
       "path": "deploy/ROOT/zh/insights/research-validation/index.html",
-      "sha256": "53ee4bcd01832277b482fe1d5078dcd9a7120014cfb40a626a4f3a6e8e6c5bfe"
+      "sha256": "5cc53370b5bb57bd87b2b41daf84cd4ccf1203ea76fcc5777f5efac88f773826"
     },
     {
       "bytes": 10285,
       "path": "deploy/ROOT/zh/now/index.html",
-      "sha256": "33f2ebd5fa75d0ae4fabfd21af7808ab7c3601dfe4a90433c38965d93e58c764"
+      "sha256": "68c10ffe9c358d747601b0115a8a8383282aab42901d02d2255cd85862d679af"
     },
     {
       "bytes": 9594,
       "path": "deploy/ROOT/zh/privacy.html",
-      "sha256": "45d856c6980fec6e2f77e7b316f241c87a246f8ad065136114dc89313e4225be"
+      "sha256": "7587b0a410879bc5f647ce0bdf5b31ab0bf5ff491d5710f5887d86b7e38974c9"
     },
     {
       "bytes": 11399,
       "path": "deploy/ROOT/zh/projects/emotion-recognition/index.html",
-      "sha256": "327e3f0e621147eb0438adae38908454b79ddf3bd3a12d5793b414147dd36e15"
+      "sha256": "e7ad2317cd1c035d0d180fdd2eb9cf58c5b0b94c7ef2c0f8e5a9878b830c40ab"
     },
     {
       "bytes": 11378,
       "path": "deploy/ROOT/zh/projects/histology-segmentation/index.html",
-      "sha256": "8e5c9c6db97e8a8f3658ced1b7059fae8d595a800ecd38da51929f90cfdf4ba8"
+      "sha256": "e5b200f096e3ab46b609bae9ef2d89bd69381f87ae3299b790dc8a4d509528e1"
     },
     {
-      "bytes": 14597,
+      "bytes": 14932,
       "path": "deploy/ROOT/zh/projects/index.html",
-      "sha256": "32509f9e5a0c1f095afd76f796f19eeae5f57617484306de7c52a8d1cd95697b"
+      "sha256": "fd2dac90939ec2bbba0c69de51dcd21b93e2b02fe71ac0eb88b4643775dccf5b"
     },
     {
-      "bytes": 11191,
+      "bytes": 11897,
       "path": "deploy/ROOT/zh/projects/investment-financial-management/index.html",
-      "sha256": "e425714a0faa70adad92bfaec9578743b086b5cb2a34cce91b9d9c10e88fe6b5"
+      "sha256": "2059080d8a6ea0d0180f6503d69be39fae87c175dda5ff7c091ead436cb85c7b"
     },
     {
       "bytes": 12238,
       "path": "deploy/ROOT/zh/projects/marginloom/index.html",
-      "sha256": "8509a2feecac993d97437d6489adee6bb11e12d903f07ea40cd70db7d3ac2108"
+      "sha256": "12ffcc7efd484705724378da572429137fcdd2c660071ea179ad91a52deed476"
     },
     {
       "bytes": 13816,
       "path": "deploy/ROOT/zh/research/index.html",
-      "sha256": "ebc41230197980efbe2ee96c297150b639342d26bf5f8c078873d535fa3e02b9"
+      "sha256": "49a36f2fd4f2c6b53459486ab5a76b14746f883c4349a8bcd14b1045a7118691"
     },
     {
       "bytes": 12543,
       "path": "deploy/ROOT/zh/skills/index.html",
-      "sha256": "983600ee38f4a4a6a3f0e175ce05cd799cd4bef09241f3c8730421675c885ec2"
+      "sha256": "a312eff59d8f84c5da63d861564873e5c806a3727cf66f1230a504f17f54f526"
     },
     {
       "bytes": 2143,
@@ -313,9 +318,9 @@
       "sha256": "44b8e8606be0dcedd497e37cd1225061ac0c4d46ba8a2a302dc61cec0ab076fe"
     },
     {
-      "bytes": 2027,
+      "bytes": 2943,
       "path": "docs/CHANGELOG.md",
-      "sha256": "96d8678e91a318970aa316536ad7e62129f19dddba1a588ec73536a159c4aed9"
+      "sha256": "f61425d24a1df13d064b3397c6ae8b45297717d982cda69c0c56dbf1df76d9d8"
     },
     {
       "bytes": 3358,
@@ -328,19 +333,19 @@
       "sha256": "1418447fb66db9e198a5e0c001451658c2edf3110fd8f0c501f06e8d0ebeeebf"
     },
     {
-      "bytes": 6978,
+      "bytes": 7616,
       "path": "docs/DEPLOYMENT_TOMCAT.md",
-      "sha256": "4d876ed9b2db24c200f4111ea29b6c84e087cf79b07a82dbae00379da139046f"
+      "sha256": "b00418a0421fb1921aef2b8792b6b06184e651911722696c2f3714392795dfee"
     },
     {
-      "bytes": 4905,
+      "bytes": 5796,
       "path": "docs/RELEASE_REVIEW_ZH.md",
-      "sha256": "014082014650b9d18dfe969bb3602b0044e28d00807648b6917e9f2d8af79bc8"
+      "sha256": "5af20746ee96a56cf4e24367ea5f115b84a67718ec57b21f7d0ed69e4bf428c7"
     },
     {
       "bytes": 3794,
       "path": "docs/TEST_REPORT.md",
-      "sha256": "b8a49e15f95eaf558973f8a449c092ef9429399560fa967b648cce4319cd565e"
+      "sha256": "1799dc84b92a9d715b5ebf32f7049b202a43c6049b3c1c7a296dc4f530352060"
     },
     {
       "bytes": 8446,
@@ -353,9 +358,9 @@
       "sha256": "787904d2eb04526525e93e18620080c36b3ef3d0c83d8d8bb28435fce4681a78"
     },
     {
-      "bytes": 69237,
+      "bytes": 69382,
       "path": "scripts/build.py",
-      "sha256": "19ea3281537c28f590f3108e5400484d9e3db6ad9f713f6f955daa550ba06f29"
+      "sha256": "7236e525516df5bb856498e3b0c4b490db819735fa4a9271328afa2f097daf02"
     },
     {
       "bytes": 22938,
@@ -368,14 +373,14 @@
       "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
     },
     {
-      "bytes": 173336,
+      "bytes": 181136,
       "path": "scripts/fonts/PortfolioSansSC-Regular.ttf",
-      "sha256": "4584ea394f0268365a0f5c6963b3a9b71035204ce7648271d5350ddf195e6d3a"
+      "sha256": "fe6c38c6f41e10dae8b2edb4d4c509bfb2cdd1ada1237d7e9ec71123d4b1dfa9"
     },
     {
-      "bytes": 173268,
+      "bytes": 181088,
       "path": "scripts/fonts/PortfolioSansSC-Semibold.ttf",
-      "sha256": "69299fbc22788a14acc4fe9f8e683cd94c7c8680d8a9304297b5a0a742577b4e"
+      "sha256": "2a0963860ffdbf2a696740883140ed550145cf14ecdc37c9be2b0d33df02a675"
     },
     {
       "bytes": 1362,
@@ -395,12 +400,12 @@
     {
       "bytes": 9597,
       "path": "site/404.html",
-      "sha256": "6feab226016cd87d960fe3cadd274a12cee07fe593811d7d45a26cc2612e4659"
+      "sha256": "50031a8375d69d02539cc7acee3741e951d809db28559dd705c4e076276a6f48"
     },
     {
       "bytes": 6,
       "path": "site/VERSION.txt",
-      "sha256": "cd6321af37482f49efc326524a9fcd7fc86902a48da8d4bbd3dc718d290c3fea"
+      "sha256": "c6d3fb057b198f1d0563d4218d4e36b48df752251aabffe78ea60aac5a72c7a2"
     },
     {
       "bytes": 707,
@@ -410,7 +415,7 @@
     {
       "bytes": 11718,
       "path": "site/about/index.html",
-      "sha256": "694a9a4af680b2ef7c53513fa195ed132f6dd515ee33a625db7f2411a8a37e32"
+      "sha256": "f08d8dec679b2984c4d6dff0643f7c2560c7107df530a877630297f692e85329"
     },
     {
       "bytes": 19988,
@@ -450,32 +455,32 @@
     {
       "bytes": 243,
       "path": "site/build-info.json",
-      "sha256": "f9ad03df37ef5a5aa4307f8d5b8dbdd9462f96bc66e8fd605ebcf4a08b546476"
+      "sha256": "e357db8ed4292826cf9e0f1576544ef3c874c457bb8cbd4dd0e05b8eda320800"
     },
     {
       "bytes": 10009,
       "path": "site/contact/index.html",
-      "sha256": "ffa7dcebc16b714f43b8155261eff7b664da71f79e95335bbcea47307e6665d7"
+      "sha256": "0ffb2966f6099eb87d56944fb45c84d319eafb40626c02eef093cc60df67208a"
     },
     {
       "bytes": 43652,
       "path": "site/coursework/index.html",
-      "sha256": "bc53992c6d6dcbf99dcb2404fc2c5656b06e7d4527234548a74ae9da29503d37"
+      "sha256": "a94d3e71fcb72bc8fd5064c1bb7873f67acb9c103cb0bc54b930a619defb0be7"
     },
     {
-      "bytes": 14138,
+      "bytes": 14116,
       "path": "site/cv/index.html",
-      "sha256": "c9b42d0be813fdc20fad7d4b04dd1d5d757eb674abc879e53da1e876d3457971"
+      "sha256": "2da7b51ef3202b3d17427fdb885ea6ea676fc0b2174eac2134b3fa1f8436a135"
     },
     {
       "bytes": 9465,
       "path": "site/education/degree-credential/index.html",
-      "sha256": "ed56e880ef516cdfa27ea9e43e059d3a6efc67a7b1f934838d0fe49821e54dd5"
+      "sha256": "efe3772b02e7715d6841ea51f2e19f0e4cd8eb3a531a356acdea2106bee536a1"
     },
     {
       "bytes": 12036,
       "path": "site/education/index.html",
-      "sha256": "7dc6d8b35c87fad81592cbb7425799d4ee49c075c7ce1e48999cc1e01f2f9042"
+      "sha256": "39d8c8168d821287da8df8ec63c71224b59ff4638ef30512e48844c3989e70f6"
     },
     {
       "bytes": 21159,
@@ -488,29 +493,29 @@
       "sha256": "3a1c5afda69264df17715098d05bb5ad24d8888676857c1a0ccff1b04f486087"
     },
     {
-      "bytes": 25985,
+      "bytes": 27438,
       "path": "site/files/zhongjie-huang-cv-en.pdf",
-      "sha256": "53415ee2c8604666f002de6c1464427e532085e38d3a4ff45e214690a64af56f"
+      "sha256": "f13d0ce67371387f405cb81688ad47260c1bf9ceae4939f81703ea88cf0263a2"
     },
     {
-      "bytes": 98348,
+      "bytes": 104476,
       "path": "site/files/zhongjie-huang-cv-zh.pdf",
-      "sha256": "52c62a91c831ff4f70ba45cbdc94a163409243918058f4f050771c31894259bd"
+      "sha256": "9be1402653eb4c180e96a9a9e8d6ed5711a4ab8caf4759ace2dfa938dde77be7"
     },
     {
-      "bytes": 41058,
+      "bytes": 41892,
       "path": "site/files/zhongjie-huang-profile.json",
-      "sha256": "082e66bf858bb019da0c384497b96a211bb9a8e6c04179cc02282efe45918a34"
+      "sha256": "eb0a591f56194fccb901b2e9ce9773b3f90e659542d71e5e2d898f5c2a1a450b"
     },
     {
-      "bytes": 18490,
+      "bytes": 18796,
       "path": "site/index.html",
-      "sha256": "6183b18ff0274c5a677f50ea0e7ee28e5640d46e39223a0baa4add0b42079b84"
+      "sha256": "23a03e9c743959cebd6d1a7a81f3dd48bfd307e1831856048c474995a1600c7e"
     },
     {
       "bytes": 11374,
       "path": "site/insights/research-validation/index.html",
-      "sha256": "cdcbcd8dcde0285812db2d1cb1dbbf26bd51904584222227cc1996beccc6ccad"
+      "sha256": "2a9b15865c6757d70e59a8d551e0d2974d31aecffdb8bd2ca5ba010130bedde5"
     },
     {
       "bytes": 356,
@@ -520,42 +525,42 @@
     {
       "bytes": 10590,
       "path": "site/now/index.html",
-      "sha256": "b09dec61369e525992c66ee88f7a826536727968d75b1b141b71cc153e355937"
+      "sha256": "d4fcc38a849dc89b2eb0029c01f2b572695a492b4e24a74f614994ba5eb6b424"
     },
     {
       "bytes": 9758,
       "path": "site/privacy.html",
-      "sha256": "14b1dd6bdcb680e2adf80318fe903bbbbd4c006df971377dad179a8d5563def4"
+      "sha256": "f9d9e0f0e841be5462e03a8b1819f7289864ed586950c436ac6eb162a3f8f625"
     },
     {
       "bytes": 11710,
       "path": "site/projects/emotion-recognition/index.html",
-      "sha256": "6bb3974332a1c2998f7a63d34d799f34022c47aa5b4d4b51bad0c69534ecefed"
+      "sha256": "80f682fbaff61c0023d9f33729cf2e9830c4c10061ec933f282b09c2696e03d6"
     },
     {
       "bytes": 11834,
       "path": "site/projects/histology-segmentation/index.html",
-      "sha256": "5dc8875b47453acece676ea7066f9c74fc32e8264beaafb198a22605ef7f27f5"
+      "sha256": "a734b29254fdd1afa5a71a96f28b2c06e759338c8cb084eab37de8bd936e2053"
     },
     {
-      "bytes": 14936,
+      "bytes": 15251,
       "path": "site/projects/index.html",
-      "sha256": "d4f1beed657a3f6cafe2be6b1471e7a31d824c822d0444319e2762d120cca408"
+      "sha256": "70deba51f9f26085e4f2f5551fdf5c1aa4fa2ef78d8b8aa176b6c134b2c62278"
     },
     {
-      "bytes": 11650,
+      "bytes": 12399,
       "path": "site/projects/investment-financial-management/index.html",
-      "sha256": "5c9be077cd15a0a8e855530499e118563c0bba1e25d5d8c8de4fa4ec62f7a2fc"
+      "sha256": "1323eb226e97b7b19c30c3e337e042697009a4221277fdbb0a56b8ac6000805a"
     },
     {
       "bytes": 12596,
       "path": "site/projects/marginloom/index.html",
-      "sha256": "19bdf9e4856f77db3b7e309579ff17ac6683129687ac86c05e51deb3ca2cf940"
+      "sha256": "7578b6da8f4a55b5a6ad52860373b44681bbed8048656fa82e64f67df0b275d6"
     },
     {
       "bytes": 14433,
       "path": "site/research/index.html",
-      "sha256": "68de61510d0c3864f3285eab253f1187a546f40247fde6531b5f418676750753"
+      "sha256": "7d27c25753528e463fa2a681949a951cfda0d2b4dce467dace593060141c6ff1"
     },
     {
       "bytes": 74,
@@ -570,97 +575,97 @@
     {
       "bytes": 12943,
       "path": "site/skills/index.html",
-      "sha256": "d60275cc3832468016479469523f499d942f397e85b4ee15b7f082ba301ab48c"
+      "sha256": "1114b53cfa40eadf5d9ac0f86a54ec17f14fc22774ab55780fc1bcd69ce1cec4"
     },
     {
       "bytes": 9619,
       "path": "site/zh/404.html",
-      "sha256": "48afeac1c954d682736ac2a216f3c65040c425f032be4dee2c7bbedb8b7c9de9"
+      "sha256": "58016a3a5fcc94f7cf5235cf3feea23bb5a1285f536fff73c098a24bf513d66c"
     },
     {
       "bytes": 11376,
       "path": "site/zh/about/index.html",
-      "sha256": "3b8da8663bf72af10ecb0d1c723df54622454f2dca7f28970cec217a0834ca2a"
+      "sha256": "a6c75355f6a73866ee8326b8dc6d48fe9e9f3826115dc372cf9689296b42d12c"
     },
     {
       "bytes": 9868,
       "path": "site/zh/contact/index.html",
-      "sha256": "ee2aef626bc1007c3ecf69d110dd96e8cbf5695e0f5d3ad0ef0985ee77ad74c0"
+      "sha256": "0abec57f138a28ebc61f5e91c717b67eb95bb380a37241813c9490304b115df4"
     },
     {
       "bytes": 41513,
       "path": "site/zh/coursework/index.html",
-      "sha256": "fd92b986f5c417db6d243a4773ea8409dc542476b94c5ba8d616b8e9fefd2762"
+      "sha256": "db44ea02daf1691476fba07a55cab59e4c7fa8c00e4c7e4ae8aa192e57fde10e"
     },
     {
       "bytes": 13594,
       "path": "site/zh/cv/index.html",
-      "sha256": "4e4a8d054ff48de1836ce30733bf7f83e296f18382fffa2ee051e147862361b2"
+      "sha256": "5b72958c8236a80b93634937ec756db01efc59326f684f467cfd2d327ab37d37"
     },
     {
       "bytes": 9290,
       "path": "site/zh/education/degree-credential/index.html",
-      "sha256": "f203250e9f1462dd057a7c8203409bfb88623f59036206c27fc19e6ef05962c5"
+      "sha256": "b0e52200d775f87a82af10811b77e1b6e23612e9dd4cf3bf169f91bca75dd283"
     },
     {
       "bytes": 11654,
       "path": "site/zh/education/index.html",
-      "sha256": "a448409e8fc5e81c620c908f42949c784b908ca24d384a2b61e5cd78982a4a4f"
+      "sha256": "5f84475e3fab2a3f3bf0539eb493180bd8f07e579f52d23fc491ada0da4f00c3"
     },
     {
-      "bytes": 17978,
+      "bytes": 18294,
       "path": "site/zh/index.html",
-      "sha256": "3af2a20d3c4d60f69f46d8bca22ee952ddf73a21122e5a0b1ece7083ed28db7b"
+      "sha256": "785655b8fa1ff689ae68b3145e2c7986760774c511d5abba7db146dac82bf84e"
     },
     {
       "bytes": 11164,
       "path": "site/zh/insights/research-validation/index.html",
-      "sha256": "53ee4bcd01832277b482fe1d5078dcd9a7120014cfb40a626a4f3a6e8e6c5bfe"
+      "sha256": "5cc53370b5bb57bd87b2b41daf84cd4ccf1203ea76fcc5777f5efac88f773826"
     },
     {
       "bytes": 10285,
       "path": "site/zh/now/index.html",
-      "sha256": "33f2ebd5fa75d0ae4fabfd21af7808ab7c3601dfe4a90433c38965d93e58c764"
+      "sha256": "68c10ffe9c358d747601b0115a8a8383282aab42901d02d2255cd85862d679af"
     },
     {
       "bytes": 9594,
       "path": "site/zh/privacy.html",
-      "sha256": "45d856c6980fec6e2f77e7b316f241c87a246f8ad065136114dc89313e4225be"
+      "sha256": "7587b0a410879bc5f647ce0bdf5b31ab0bf5ff491d5710f5887d86b7e38974c9"
     },
     {
       "bytes": 11399,
       "path": "site/zh/projects/emotion-recognition/index.html",
-      "sha256": "327e3f0e621147eb0438adae38908454b79ddf3bd3a12d5793b414147dd36e15"
+      "sha256": "e7ad2317cd1c035d0d180fdd2eb9cf58c5b0b94c7ef2c0f8e5a9878b830c40ab"
     },
     {
       "bytes": 11378,
       "path": "site/zh/projects/histology-segmentation/index.html",
-      "sha256": "8e5c9c6db97e8a8f3658ced1b7059fae8d595a800ecd38da51929f90cfdf4ba8"
+      "sha256": "e5b200f096e3ab46b609bae9ef2d89bd69381f87ae3299b790dc8a4d509528e1"
     },
     {
-      "bytes": 14597,
+      "bytes": 14932,
       "path": "site/zh/projects/index.html",
-      "sha256": "32509f9e5a0c1f095afd76f796f19eeae5f57617484306de7c52a8d1cd95697b"
+      "sha256": "fd2dac90939ec2bbba0c69de51dcd21b93e2b02fe71ac0eb88b4643775dccf5b"
     },
     {
-      "bytes": 11191,
+      "bytes": 11897,
       "path": "site/zh/projects/investment-financial-management/index.html",
-      "sha256": "e425714a0faa70adad92bfaec9578743b086b5cb2a34cce91b9d9c10e88fe6b5"
+      "sha256": "2059080d8a6ea0d0180f6503d69be39fae87c175dda5ff7c091ead436cb85c7b"
     },
     {
       "bytes": 12238,
       "path": "site/zh/projects/marginloom/index.html",
-      "sha256": "8509a2feecac993d97437d6489adee6bb11e12d903f07ea40cd70db7d3ac2108"
+      "sha256": "12ffcc7efd484705724378da572429137fcdd2c660071ea179ad91a52deed476"
     },
     {
       "bytes": 13816,
       "path": "site/zh/research/index.html",
-      "sha256": "ebc41230197980efbe2ee96c297150b639342d26bf5f8c078873d535fa3e02b9"
+      "sha256": "49a36f2fd4f2c6b53459486ab5a76b14746f883c4349a8bcd14b1045a7118691"
     },
     {
       "bytes": 12543,
       "path": "site/zh/skills/index.html",
-      "sha256": "983600ee38f4a4a6a3f0e175ce05cd799cd4bef09241f3c8730421675c885ec2"
+      "sha256": "a312eff59d8f84c5da63d861564873e5c806a3727cf66f1230a504f17f54f526"
     },
     {
       "bytes": 19988,
@@ -703,14 +708,14 @@
       "sha256": "3a1c5afda69264df17715098d05bb5ad24d8888676857c1a0ccff1b04f486087"
     },
     {
-      "bytes": 25985,
+      "bytes": 27438,
       "path": "static/files/zhongjie-huang-cv-en.pdf",
-      "sha256": "53415ee2c8604666f002de6c1464427e532085e38d3a4ff45e214690a64af56f"
+      "sha256": "f13d0ce67371387f405cb81688ad47260c1bf9ceae4939f81703ea88cf0263a2"
     },
     {
-      "bytes": 98348,
+      "bytes": 104476,
       "path": "static/files/zhongjie-huang-cv-zh.pdf",
-      "sha256": "52c62a91c831ff4f70ba45cbdc94a163409243918058f4f050771c31894259bd"
+      "sha256": "9be1402653eb4c180e96a9a9e8d6ed5711a4ab8caf4759ace2dfa938dde77be7"
     }
   ],
   "format_version": 1,
@@ -718,5 +723,5 @@
   "integrity_scope": "Every delivery file except this manifest; the outer delivery ZIP is not an input. site, deploy/ROOT and ROOT.war equality is checked by scripts/validate.py --check-deploy.",
   "reproducibility": "Sorted paths, normalized permissions, fixed member timestamps and deterministic JSON. Identical file bytes and the same Python/zlib runtime produce identical archives.",
   "snapshot_date": "2026-10-17",
-  "source_file_count": 142
+  "source_file_count": 143
 }

@@ -460,8 +460,8 @@
         "zh": "可运行的个人应用"
       },
       "summary": {
-        "en": "A Java application exploring structured financial records, validation, persistent storage and clear reporting interfaces.",
-        "zh": "以 Java 实现的应用，涉及结构化财务记录、校验、持久化存储与清晰的报告界面。"
+        "en": "A Java MVC application for multi-currency financial reports, paired account transfers and administrator-managed inflation records.",
+        "zh": "采用 Java MVC 的财务应用，支持多币种报告、账户转账配对分录，以及由管理员维护的通胀记录。"
       },
       "role": {
         "en": "Personal software project",
@@ -481,8 +481,8 @@
             "zh": "领域与流程"
           },
           "body": {
-            "en": "Structured entities and workflows for accounts, transactions, positions and user-facing summaries. The public case study focuses on how a complex domain is organised into manageable application responsibilities.",
-            "zh": "围绕账户、交易、持仓及面向用户的汇总组织实体和流程。公开案例聚焦如何将复杂领域划分为可管理的应用职责。"
+            "en": "Accounts, transactions and positions feed a shared reporting workflow. Internal transfers use paired journal entries and are listed separately from income and expenses; ordinary transactions retain their original currency and account.",
+            "zh": "账户、交易与持仓共同支撑报告流程。内部转账使用成对记账分录，单独列出并排除在收入与支出之外；普通流水保留原币种和所属账户。"
           }
         },
         {
@@ -491,8 +491,8 @@
             "zh": "应用工程"
           },
           "body": {
-            "en": "Layered Java design, persistence, input validation, access control and error handling, with separation between domain logic and presentation.",
-            "zh": "采用分层 Java 设计，涉及持久化、输入校验、访问控制及错误处理，将领域逻辑与界面展示分离。"
+            "en": "The existing Java MVC structure separates request handling, domain logic and persistence. Server-side account permissions control inflation maintenance, while transfer entries are written and reversed together in database transactions.",
+            "zh": "沿用现有 Java MVC 架构，将请求处理、领域逻辑与持久化分离。通胀维护权限由服务端账户身份决定，转账分录通过数据库事务成对写入与撤销。"
           }
         },
         {
@@ -501,8 +501,8 @@
             "zh": "界面设计"
           },
           "body": {
-            "en": "Information hierarchy, filterable data views and understandable empty or error states help users interpret structured records.",
-            "zh": "通过信息层级、可筛选的数据视图及明确的空状态和错误状态，帮助用户理解结构化记录。"
+            "en": "Reports can switch between ten major currencies using the cached daily exchange-rate snapshot. Inflation and cash-flow tables support filtering and reversible column sorting, with monthly inflation readings recorded on the 15th.",
+            "zh": "报告可使用缓存的每日汇率快照，在十种主要货币之间切换。通胀与收支列表提供筛选和表头双向排序，每月通胀记录日期统一为15日。"
           }
         },
         {
@@ -518,31 +518,36 @@
       ],
       "outcomes": {
         "en": [
-          "A case study in modelling a domain and implementing persistent workflows.",
-          "Experience connecting validation, application logic and reporting interfaces."
+          "Multi-currency reporting within the existing MVC application.",
+          "Paired transfer records separated from external cash flow.",
+          "Server-controlled inflation maintenance and sortable data views."
         ],
         "zh": [
-          "围绕领域建模与持久化工作流的工程案例。",
-          "连接校验、应用逻辑与报告界面的实践经验。"
+          "在原有 MVC 应用中实现多币种报告。",
+          "将成对内部转账记录与外部收支分开。",
+          "服务端控制通胀维护权限，并提供可排序的数据视图。"
         ]
       },
       "limits": {
         "en": [
           "No returns, customer numbers, revenue or production reliability claims are made.",
-          "Private accounts, credentials, transactions and source code are not included.",
-          "This page describes software engineering, not financial advice or a public trading service."
+          "Private accounts, credentials and transaction data are excluded from the linked source repository.",
+          "This page describes software engineering, not financial advice or a public trading service.",
+          "Application checks document specific behaviour; no independent security certification is claimed."
         ],
         "zh": [
           "不宣称投资回报、客户数量、收入或生产环境可靠性。",
-          "不包含私人账户、凭据、交易记录与源码。",
-          "此页面介绍软件工程，不提供投资建议或公开交易服务。"
+          "链接的源码仓库不包含私人账户、凭据与交易数据。",
+          "此页面介绍软件工程，不提供投资建议或公开交易服务。",
+          "应用检查验证具体行为，不宣称取得独立安全认证。"
         ]
       },
       "evidence": {
-        "en": "Architecture and feature descriptions retained from the supplied portfolio v3.2.1.",
-        "zh": "依据所提供 v3.2.1 作品集中的架构及功能说明。"
+        "en": "Application source and targeted automated checks for the October 2026 update.",
+        "zh": "依据2026年10月更新的应用源码与针对性自动检查。"
       },
-      "live_url": "https://iafm.zhongjiehuang.com"
+      "live_url": "https://iafm.zhongjiehuang.com",
+      "repository": "https://github.com/zhjpersonal83-cell/Investment_and_Financial_Management"
     }
   ],
   "skills": [

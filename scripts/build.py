@@ -187,6 +187,8 @@ class Page:
             glyph = {"histology-segmentation": "01 / VISION", "emotion-recognition": "02 / VISION", "marginloom": "03 / EVIDENCE", "investment-financial-management": "04 / SYSTEMS"}.get(project['id'], f'{index + 1:02d} / SOFTWARE')
             visual = f'<div class="project-visual" aria-hidden="true"><span class="project-glyph">{esc(glyph)}</span><span>{esc(cat_label)}</span></div>'
         actions = self.link("projects/"+project["id"]+"/", self.l("view_project") + " →", klass="project-link")
+        if project.get('repository'):
+            actions += self.link(project['repository'], 'GitHub ↗', klass='project-link', external=True)
         if project.get('live_url'):
             actions = '<div class="actions">' + self.link(project['live_url'], self.w('Launch application ↗', '进入应用 ↗'), 'button primary', external=True) + actions + '</div>'
         return f'<article class="project-card"{attrs}>{visual}<div class="project-body"><p class="project-meta">{esc(meta)}</p><h3 class="card-title">{self.link("projects/"+project["id"]+"/", self.t(project["title"]), klass="")}</h3><p>{esc(self.t(project["summary"]))}</p><p class="project-meta">{esc(self.t(project["status_label"]))}</p>{self.tags(project["stack"][:4])}{actions}</div></article>'
