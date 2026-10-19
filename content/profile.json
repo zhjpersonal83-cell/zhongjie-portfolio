@@ -350,20 +350,21 @@
         "zh": "可运行的个人原型"
       },
       "summary": {
-        "en": "An AI-assisted software prototype connecting prediction evaluation, calibration, selective prediction, human review and reproducible evidence reports.",
-        "zh": "使用 AI 辅助开发的软件原型，将预测评估、校准、选择性预测、人工复核与可重复生成的证据报告连接起来。"
+        "en": "A Java Web AI reliability workbench for calibration, selective prediction, human review and reproducible evidence reports, with workspace-scoped MySQL persistence.",
+        "zh": "基于 Java Web 的 AI 可靠性评估工作台，连接校准、选择性预测、人工复核与可复现证据报告，并通过 MySQL 隔离保存各工作空间的数据。"
       },
       "role": {
         "en": "Personal research and software prototype, developed with AI assistance",
         "zh": "个人研究与软件原型，使用 AI 辅助开发"
       },
       "stack": [
-        "React",
-        "TypeScript",
-        "Python",
-        "scikit-learn",
-        "SQLite / D1",
-        "Docker",
+        "Java 21",
+        "Servlet 4",
+        "Maven",
+        "Tomcat 9",
+        "JDBC / MySQL",
+        "HTML / CSS / JavaScript",
+        "JUnit",
         "GitHub Actions"
       ],
       "repository": "https://github.com/zhjpersonal83-cell/marginloom",
@@ -394,8 +395,8 @@
             "zh": "工程实现"
           },
           "body": {
-            "en": "A React and TypeScript interface connects to typed API handlers and SQLite/D1 persistence. Python and scikit-learn produce reproducible baseline models and evaluation exports. Workspace boundaries, validation and audit records support the demonstration workflow.",
-            "zh": "React 与 TypeScript 界面连接类型化 API 及 SQLite/D1 持久化层。Python 与 scikit-learn 生成可复现的基线模型和评估结果。工作空间隔离、输入校验与审计记录支撑演示流程。"
+            "en": "Java 21 Servlet controllers, JDBC/MySQL persistence and native HTML/CSS/JavaScript form a Maven WAR deployed on Tomcat 9. Python and scikit-learn remain optional offline research tools; the live application runs in Java.",
+            "zh": "Java 21 Servlet 控制器、JDBC/MySQL 持久化和原生 HTML/CSS/JavaScript 组成 Maven WAR，并部署于 Tomcat 9。Python 与 scikit-learn 仅用于可选的离线研究复现；线上应用由 Java 运行。"
           }
         },
         {
@@ -404,8 +405,8 @@
             "zh": "证据与范围"
           },
           "body": {
-            "en": "The public MIT-licensed repository includes source, model and prediction exports, documentation and tests. Its web, research and container GitHub Actions jobs passed on 4 October 2026 for the recorded verification commit. This portfolio update inspected those records; it did not rerun the complete prototype.",
-            "zh": "公开 MIT 许可仓库包含源码、模型与预测导出、文档及测试。记录的验证提交于 2026 年 10 月 4 日通过 web、research 与 container 三项 GitHub Actions 任务。本次作品集更新核实了这些记录，但未重新运行完整原型。"
+            "en": "The public MIT-licensed repository includes Java source, trained-model exports, documentation and tests. The Java Web migration passed numeric-parity and real Tomcat HTTP tests, MySQL isolation and quota checks, and GitHub Actions run 39248477725. Existing SQLite records were migrated to MySQL and checked against the backup.",
+            "zh": "公开 MIT 许可仓库包含 Java 源码、已训练模型导出、文档及测试。Java Web 迁移通过了数值一致性、真实 Tomcat HTTP、MySQL 隔离与配额检查，以及 GitHub Actions 任务 39248477725。原 SQLite 记录已迁移至 MySQL，并与备份核对。"
           }
         }
       ],
@@ -413,12 +414,12 @@
         "en": [
           "An inspectable prototype spanning evaluation, policy exploration and human review.",
           "Public source, generated model artifacts and documented reproduction steps.",
-          "Recorded web, research and container checks for a specific October 2026 commit."
+          "Java Web migration with numeric parity, real Tomcat/MySQL checks and verified data preservation."
         ],
         "zh": [
           "覆盖评估、策略探索及人工复核的可检查原型。",
           "公开源码、生成的模型产物和复现步骤文档。",
-          "记录明确提交版本的网页、研究与容器检查结果。"
+          "完成 Java Web 迁移，并核验数值一致性、Tomcat/MySQL 流程和原有数据保留。"
         ]
       },
       "limits": {
@@ -434,8 +435,8 @@
         ]
       },
       "evidence": {
-        "en": "Public repository README, package metadata and verification documentation, plus GitHub Actions run 37196645885; inspected 16 October 2026.",
-        "zh": "依据公开仓库 README、依赖信息、验证文档及 GitHub Actions 运行 37196645885；核实于 2026 年 10 月 16 日。"
+        "en": "Public Java Web repository, successful GitHub Actions run 39248477725 and verified HTTPS workflows on 19 October 2026.",
+        "zh": "依据公开 Java Web 仓库、成功的 GitHub Actions 任务 39248477725，以及 2026 年 10 月 19 日核验的 HTTPS 流程。"
       },
       "live_url": "https://marginloom.zhongjiehuang.com"
     },
@@ -567,19 +568,21 @@
         "zh": "可运行的个人原型"
       },
       "summary": {
-        "en": "An interactive AI reliability lab where visitors challenge a classifier, teach corrections, and compare real learning on clean and shifted synthetic data.",
-        "zh": "交互式 AI 可靠性实验室：挑战分类器、提交纠正，并在原始与分布偏移的合成数据上比较真实学习效果。"
+        "en": "A Java Web lab for challenging a classifier, applying real online corrections, and comparing clean and shifted evaluations with isolated sessions, rollback and JSON/CSV exports.",
+        "zh": "基于 Java Web 的交互式 AI 可靠性实验室：挑战分类器、执行真实在线纠正，并在独立会话中比较原始与偏移数据评估，支持回滚及 JSON/CSV 导出。"
       },
       "role": {
         "en": "Personal portfolio project, developed with AI assistance",
         "zh": "个人作品集项目，使用 AI 辅助开发"
       },
       "stack": [
-        "React",
-        "TypeScript",
-        "FastAPI",
-        "scikit-learn",
-        "Docker",
+        "Java 21",
+        "Servlet 4",
+        "Maven",
+        "Tomcat 9",
+        "JDBC / MySQL",
+        "HTML / CSS / JavaScript",
+        "JUnit",
         "GitHub Actions"
       ],
       "live_url": "https://outcomelab.zhongjiehuang.com",
@@ -601,8 +604,8 @@
             "zh": "可复现的工程实现"
           },
           "body": {
-            "en": "A React and TypeScript interface connects to FastAPI and scikit-learn. Fixed data partitions, controlled drift experiments and JSON/CSV exports support inspection. Automated checks cover backend behaviour, browser workflows and Docker startup.",
-            "zh": "React 与 TypeScript 界面连接 FastAPI 和 scikit-learn。固定数据划分、可控分布偏移实验及 JSON/CSV 导出便于检查；自动验证覆盖后端行为、浏览器流程与 Docker 启动。"
+            "en": "Java 21 Servlet controllers and a native HTML/CSS/JavaScript interface are packaged as a Maven WAR on Tomcat 9. JDBC/MySQL supplies an immutable, checksum-verified baseline model; corrections and model snapshots remain in temporary memory. Tests compare predictions and learning updates with the original implementation and check isolation, exports and exact rollback.",
+            "zh": "Java 21 Servlet 控制器与原生 HTML/CSS/JavaScript 界面打包为 Maven WAR，部署于 Tomcat 9。JDBC/MySQL 提供不可变且经过校验的基线模型；纠正记录和模型快照仍仅保存在临时内存中。测试对照原实现的预测与学习更新，并检查隔离、导出和精确回滚。"
           }
         }
       ],
@@ -627,8 +630,8 @@
         ]
       },
       "evidence": {
-        "en": "Public source and successful GitHub Actions run 39238690979; live HTTPS workflow verified on 19 October 2026.",
-        "zh": "依据公开源码及通过的 GitHub Actions 运行 39238690979；HTTPS 在线流程已于 2026 年 10 月 19 日核验。"
+        "en": "Public Java Web repository, successful GitHub Actions run 39248817565 and verified HTTPS learning/rollback workflow on 19 October 2026.",
+        "zh": "依据公开 Java Web 仓库、成功的 GitHub Actions 任务 39248817565，以及 2026 年 10 月 19 日核验的 HTTPS 学习与回滚流程。"
       }
     }
   ],
@@ -774,14 +777,16 @@
         "zh": "评估软件与可复现工作流"
       },
       "description": {
-        "en": "Connecting calibration, policy exploration, human review and saved evidence through typed interfaces and persistent application workflows.",
-        "zh": "通过类型化接口与持久化应用流程，连接校准、策略探索、人工复核及可保存的证据。"
+        "en": "Connecting calibration, policy exploration, human review and saved evidence through Java Servlet APIs and workspace-scoped MySQL persistence.",
+        "zh": "通过 Java Servlet API 与按工作空间隔离的 MySQL 持久化，连接校准、策略探索、人工复核及可保存的证据。"
       },
       "tools": [
-        "React",
-        "TypeScript",
-        "Python",
-        "SQLite",
+        "Java 21",
+        "Servlet 4",
+        "Maven",
+        "Tomcat",
+        "JDBC / MySQL",
+        "HTML / CSS / JavaScript",
         "GitHub Actions"
       ],
       "basis": {

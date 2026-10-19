@@ -13,7 +13,7 @@ This report records inspection of the generated files. No browser, HTTP server, 
 | 404 references simulated at missing URLs | 164 |
 | CV source fingerprint check invocations | 1 |
 | Form controls requiring labels | 52 |
-| Generated site bytes | 1,945,097 |
+| Generated site bytes | 1,947,477 |
 | Generated site files | 56 |
 | HTML ID values | 200 |
 | HTML anchor references | 38 |

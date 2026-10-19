@@ -1,4 +1,4 @@
-# Zhongjie Huang Portfolio · v4.0.4
+# Zhongjie Huang Portfolio · v4.0.5
 
 **Website updated: 19 October 2026. Original academic materials reviewed: 16 October 2026.** A bilingual personal research and engineering portfolio, including editable source, ready-to-host static pages, a Tomcat WAR, and English and Chinese public CVs.
 
@@ -18,6 +18,10 @@
 | Review content decisions and outstanding confirmations | `docs/RELEASE_REVIEW_ZH.md` |
 
 The live portfolio is at https://www.zhongjiehuang.com. Version 4.0.2 was deployed on 17 October 2026; its homepage, IAFM and Marginloom case studies, and both application entry points returned HTTP 200. Statements about the undeployed v4.0.0 delivery describe historical file-preparation work. Ready-built `site/` files and WARs need no Python, Node.js, database or frontend build environment to serve.
+
+## v4.0.5 · 19 October 2026
+
+Updated OutcomeLab and Marginloom project descriptions, technology lists and both PDF CVs for the deployed Java Web stack. Live-demo and GitHub links are retained. See docs/JAVA_WEB_PROFILE_UPDATE.md.
 
 ## v4.0.4 · 19 October 2026
 

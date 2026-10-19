@@ -285,10 +285,10 @@ def build_one(profile: dict, lang: str, destination: Path, regular: Path,
         if not compact:
             pieces.append(para(" / ".join(project["stack"][:6]), "meta"))
         destinations = [link(project_url(project["id"]), labels["case"])]
-        if project["id"] == "outcomelab" and project.get("live_url"):
+        if project.get("live_url"):
             destinations.append(link(project["live_url"], "Live demo" if lang == "en" else "在线演示"))
         if project.get("repository"):
-            destinations.append(link(project["repository"], "GitHub" if project["id"] == "outcomelab" else labels["source"]))
+            destinations.append(link(project["repository"], "GitHub" if project["id"] in {"outcomelab", "marginloom"} else labels["source"]))
         pieces.append(para(" &nbsp; | &nbsp; ".join(destinations), "small", markup=True))
         pieces.append(Spacer(1, 6 if compact else 8))
         return KeepTogether(pieces)
@@ -350,8 +350,7 @@ def build_one(profile: dict, lang: str, destination: Path, regular: Path,
     outcomelab = projects["outcomelab"]
     story.append(project_block(outcomelab, [localise(outcomelab["summary"], lang)]))
     marginloom = projects["marginloom"]
-    story.append(project_block(marginloom, [section_body(marginloom, "Implemented workflow", lang),
-                                           first_sentences(section_body(marginloom, "Engineering approach", lang), lang, 2)]))
+    story.append(project_block(marginloom, [localise(marginloom["summary"], lang)]))
     investment = projects["investment-financial-management"]
     story.append(project_block(investment, [localise(investment["summary"], lang),
                                            section_body(investment, "Application engineering", lang)]))
@@ -360,9 +359,9 @@ def build_one(profile: dict, lang: str, destination: Path, regular: Path,
     available_tools = {tool for project in profile["projects"] for tool in project["stack"]}
     available_tools.update(tool for skill in profile["skills"] for tool in skill["tools"])
     groups = [
-        ("programming", ["Python", "Java", "TypeScript", "React", "HTML / CSS / JavaScript"]),
+        ("programming", ["Python", "Java 21", "Servlet 4", "HTML / CSS / JavaScript"]),
         ("vision", ["PyTorch", "Swin Transformer", "OpenCV", "QuPath", "Cellpose-DINO", "Cyto R-CNN", "CSGO", "scikit-learn"]),
-        ("data", ["NumPy", "pandas", "Matplotlib", "SQL", "SQLite / D1", "Git", "Docker", "Linux", "Tomcat", "GitHub Actions"]),
+        ("data", ["NumPy", "pandas", "Matplotlib", "SQL", "JDBC / MySQL", "Maven", "Git", "Docker", "Linux", "Tomcat 9", "GitHub Actions"]),
     ]
     for label, candidates in groups:
         tools = [item for item in candidates if item in available_tools]
