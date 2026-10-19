@@ -149,7 +149,7 @@ def load_profile(path: Path) -> dict:
     if len(set(identifiers)) != len(identifiers):
         raise ValueError("Duplicate project IDs in profile.json")
     for project_id in ("histology-segmentation", "emotion-recognition", "marginloom",
-                       "investment-financial-management"):
+                       "investment-financial-management", "outcomelab"):
         if project_id not in identifiers:
             raise ValueError(f"The selected CV project is missing: {project_id}")
     pending = next((item for item in profile["education"] if item["id"] == "msc"), None)
@@ -285,8 +285,10 @@ def build_one(profile: dict, lang: str, destination: Path, regular: Path,
         if not compact:
             pieces.append(para(" / ".join(project["stack"][:6]), "meta"))
         destinations = [link(project_url(project["id"]), labels["case"])]
+        if project["id"] == "outcomelab" and project.get("live_url"):
+            destinations.append(link(project["live_url"], "Live demo" if lang == "en" else "在线演示"))
         if project.get("repository"):
-            destinations.append(link(project["repository"], labels["source"]))
+            destinations.append(link(project["repository"], "GitHub" if project["id"] == "outcomelab" else labels["source"]))
         pieces.append(para(" &nbsp; | &nbsp; ".join(destinations), "small", markup=True))
         pieces.append(Spacer(1, 6 if compact else 8))
         return KeepTogether(pieces)
@@ -345,6 +347,8 @@ def build_one(profile: dict, lang: str, destination: Path, regular: Path,
     story.append(para(person["name_latin"] if lang == "en" else person["name_chinese"], "title"))
     story.append(Spacer(1, 7))
     story.append(section("software"))
+    outcomelab = projects["outcomelab"]
+    story.append(project_block(outcomelab, [localise(outcomelab["summary"], lang)]))
     marginloom = projects["marginloom"]
     story.append(project_block(marginloom, [section_body(marginloom, "Implemented workflow", lang),
                                            first_sentences(section_body(marginloom, "Engineering approach", lang), lang, 2)]))

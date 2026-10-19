@@ -1,4 +1,4 @@
-# Zhongjie Huang Portfolio · v4.0.3
+# Zhongjie Huang Portfolio · v4.0.4
 
 **网站更新日期：2026-10-19；原有学术资料核对日期：2026-10-16。** 中英双语个人研究与工程作品集，包含完整源码、可直接托管的静态页面、Tomcat WAR，以及中英文公开简历。
 
@@ -18,6 +18,10 @@
 | 查看内容更新与确认事项 | `docs/RELEASE_REVIEW_ZH.md` |
 
 v4.0.2 已于 2026-10-17 部署到 `https://www.zhongjiehuang.com`，首页、IAFM 与 Marginloom 项目详情页以及两个应用入口均核验返回 HTTP 200。早期 v4.0.0 文件交付阶段未部署服务器的记录属于历史验证范围。现成的 `site/` 和 WAR 不需要 Python、Node.js、数据库或前端构建环境来运行。
+
+## v4.0.4 · 2026-10-19
+
+中英文双页 PDF 简历新增 OutcomeLab，包含简洁项目说明、在线演示与 GitHub 超链接。
 
 ## v4.0.3 · 2026-10-19
 

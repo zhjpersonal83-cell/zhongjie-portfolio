@@ -22,3 +22,5 @@ check or substitute an unembedded viewer font.
 
 The website itself does not request or load these fonts. They are solely source
 dependencies for PDF regeneration.
+
+On 19 October 2026, the renamed OFL subsets were extended from the upstream Noto Sans SC variable font at weights 400 and 600 to cover the OutcomeLab CV description. The coverage check remains enabled.
