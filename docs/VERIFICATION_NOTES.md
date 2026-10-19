@@ -23,10 +23,10 @@ All **16 scenarios passed**:
 
 | No. | Scenario | Observed result |
 | --- | --- | --- |
-| 1 | AI boundaries and Unicode normalisation | `AI` did not match `Details about a maintained application`; it matched `Artificial intelligence`, and full-width `ＡＩ` matched `人工智能`. |
-| 2 | Bidirectional language and GPU aliases | `NLP`, `自然语言`, and `自然语言处理` matched text-processing/language-technology content; English NLP wording matched Chinese wording; `GPU` matched `Graphical Processing Units (GPUs)`. |
+| 1 | AI boundaries and Unicode normalisation | `AI` did not match `Details about a maintained application`; it matched `Artificial intelligence`, and full-width `ＡＩ` matched Chinese wording for artificial intelligence. |
+| 2 | Bidirectional language and GPU aliases | `NLP`, Chinese wording for natural language, and Chinese wording for natural-language processing matched text-processing/language-technology content; English NLP wording matched Chinese wording; `GPU` matched `Graphical Processing Units (GPUs)`. |
 | 3 | English coursework search | `NLP` returned the three relevant generated records: COM3110, COM6115 and COM6513. |
-| 4 | Chinese coursework search | `自然语言` returned the same three records. |
+| 4 | Chinese coursework search | Chinese wording for natural language returned the same three records. |
 | 5 | Programme, subject area and query together | Combining the MSc programme, language-technology area and a query identifying COM6115 returned the expected record, reported `Showing 1 of 32 modules.`, and updated the shared URL. |
 | 6 | Shared URL restoration | A new application instance restored the selected controls and expected record from the generated filter URL. |
 | 7 | No matching result | An unmatched query hid all records, exposed the supplied empty-result message and reported zero results. |

@@ -1,51 +1,52 @@
-# 内容维护指南
+# Content maintenance guide
 
-## 一份资料，多处使用
+## One source, several outputs
 
-`content/profile.json` 是职业资料的主要来源，包括基本介绍、公开联系方式、学历、项目、技能、研究兴趣、时间线与近况。页面、公开 JSON 下载和简历脚本读取这份资料。
+`content/profile.json` supplies the public introduction, contact details, education, projects, skills, interests, timeline and current status. Pages, public JSON downloads and the CV generator read this source.
 
-中英文字段使用 `{"en": "English text", "zh": "中文文本"}`。新增或修改时同时更新两种语言。项目的 `id` 是稳定 URL 标识，修改它会改变页面地址；通常应保留已有 ID。
+Bilingual fields use `{"en": "English text", "zh": "Chinese translation"}`. Update both languages together. Project `id` values are stable URL identifiers; changing an ID changes its page address, so normally retain existing IDs.
 
-`content/coursework.json` 保存课程代码、阶段、年级、分类、中英描述和参考来源。下拉筛选通过原始英文类别值匹配，中文界面单独显示中文名称，不要只改一端。
+`content/coursework.json` contains module codes, programme, year, categories, bilingual descriptions and references. Filters match the original English category values, while the Chinese interface displays translated labels. Keep both ends consistent.
 
-`content/site.json` 保存版本、资料核对日期、canonical 基址与网站说明。资料更新日期应与 `profile.json.updated` 一致。
+`content/site.json` holds the version, review date, canonical base and website description. Keep its review date consistent with `profile.json.updated`.
 
-## 添加项目
+## Add a project
 
-在 `projects` 数组中加入一个对象，沿用已有字段：
+Add an object to the `projects` array using the existing schema:
 
-- `id`：小写字母与连字符组成的稳定标识。
-- `title` / `subtitle` / `summary`：中英文名称、类型和简短介绍。
-- `period`：已经有证据的时间，不能用计划日期冒充完成时间。
-- `category`：`research` 或 `software`。
-- `status` / `status_label`：机器标识与中英展示名称；现有状态包括 `submitted`、`completed`、`prototype`、`private`、`maintained`。
-- `role`：真实个人贡献或角色；AI 辅助开发应保留准确说明。
-- `stack`：项目中有依据的工具和方法。
-- `sections`：研究问题、个人工作、实现及证据等正文段落。
-- `outcomes` / `limits` / `evidence`：产出、局限与来源。
-- `repository`：可选，仅填写已经公开且确认归属的仓库。
+- `id`: a stable lowercase, hyphenated identifier.
+- `title`, `subtitle`, `summary`: bilingual name, type and concise description.
+- `period`: evidenced dates; proposed dates must not masquerade as completion dates.
+- `category`: `research` or `software`.
+- `status`, `status_label`: machine-readable status and bilingual display labels. Existing values include `submitted`, `completed`, `prototype`, `private` and `maintained`.
+- `role`: the actual contribution or role, with accurate AI-assistance attribution where applicable.
+- `stack`: supported tools and methods.
+- `sections`: paragraphs covering the question, contribution, implementation and evidence.
+- `outcomes`, `limits`, `evidence`: outputs, limitations and sources.
+- `repository`: optional; use only a verified, public, user-owned repository.
+- `live_url`: optional; the verified public application URL.
 
-新增后生成器会创建两种语言的项目详情页、目录卡片、搜索条目及简历网页条目。首页精选项目的选择在 `scripts/build.py` 中，必要时同步调整。
+The generator creates bilingual project detail pages, directory cards, search entries and printable-CV entries. Homepage selection is configured separately in `scripts/build.py`. The PDF CV has its own selected-project layout in `scripts/build_cv.py`.
 
-## 内容状态约定
+## Status conventions
 
-学历申请、面试完成、录取、正式注册、课程结束、论文提交和学位授予是不同事件。使用已经取得的证据更新对应状态，保留记录日期，不把计划写成完成。
+Applications, completed interviews, offers, formal registration, course completion, dissertation submission and degree awards are distinct events. Update each status from evidence, retain the record date and do not describe plans as completed outcomes.
 
-研究数值应同时说明对应数据、评价设置与验证状态。新实验没有执行时，不沿用其他测试集的结果，不声称因果增益、临床用途或最佳性能。
+Research numbers need their dataset, evaluation setting and verification status. Without a new experiment, do not transfer results from another test set or claim causal gains, clinical validity or best-in-class performance.
 
-目前没有任职、实习、已发表论文、额外认证和正式语言等级的充分证据，因此本版没有制造这些栏目。得到证据后可以按同样方式添加。
+No unsupported employment, internship, publication, additional qualification or formal language-score sections are invented. Add those only when evidence becomes available.
 
-## 更新顺序
+## Update order
 
-1. 编辑并核对中英文资料，更新两份 JSON 的日期。
-2. 必要时运行 `python3 scripts/build_cv.py`，并渲染检查两份 PDF。
-3. 运行 `python3 build.py`。
-4. 运行 `python3 scripts/validate.py`。
-5. 运行 `python3 scripts/package.py`。
-6. 只部署静态输出目录或 WAR，不将整个项目根目录公开。
+1. Edit and review both languages; update the dates in both JSON sources.
+2. Where required, run `python3 scripts/build_cv.py`, render both PDFs and inspect them.
+3. Run `python3 build.py`.
+4. Run `python3 scripts/validate.py`.
+5. Run `python3 scripts/package.py`.
+6. Deploy only the static output or WAR, rather than making the whole project a web root.
 
-## 公开边界
+## Publication boundaries
 
-只把能够公开的职业资料放入 `profile.json`，因为它会生成公开下载文件。私人联系信息、登录凭据、移民和行政材料、原始医学影像、研究数据、详细成绩单及非公开代码不应加入。
+Only put publishable professional information in `profile.json`, since it generates a public download. Exclude private contact information, credentials, immigration/administrative documents, raw medical images, research data, detailed transcripts and non-public application code.
 
-本科学位证书按用户先前明确选择保持公开。若以后决定撤回，应同时移除源资产、下载链接和已部署副本，重新生成并部署；单纯隐藏导航不足以撤回公开文件。
+The undergraduate certificate remains public under the user's earlier explicit choice. Withdrawing it later requires removing the source asset, download links and deployed copies, then rebuilding and deploying. Hiding navigation alone does not withdraw a public file.

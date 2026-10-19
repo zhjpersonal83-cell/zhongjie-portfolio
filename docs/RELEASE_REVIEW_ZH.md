@@ -1,59 +1,59 @@
-# v4.0.2 内容更新与核对说明
+# v4.0.2 content review and decisions
 
-网站更新日期：2026 年 10 月 17 日。v4.0.2 在 4.0.1 基础上补齐两个应用卡片及详情页的 GitHub 入口，更新 IAFM 的十币种报告、配对转账记账与管理员权限说明，并已部署及核验线上入口。4.0.1 移除作品集自身与 Android hub 项目经历、表情识别仅保留文字介绍的决定继续保留；原有学术资料仍以 2026 年 10 月 16 日的核对记录为依据。
+Historical website update: 17 October 2026. Version 4.0.2 added GitHub links to both application cards and detail pages, updated IAFM's ten-currency reports, paired transfers and administrator permissions, and was deployed with live entry-point checks. The v4.0.1 decisions to remove the portfolio-self and Android Hub project entries and retain text-only emotion recognition remained in force. Academic-source review remained dated 16 October 2026. Later OutcomeLab/CV releases have separate records.
 
-## 关键资料判断
+## Key content decisions
 
-| 资料 | 本版采用的表述 | 核对依据与边界 |
+| Topic | Adopted wording | Evidence and limits |
 | --- | --- | --- |
-| 姓名 | Zhongjie Huang / 黄中杰 | 原作品集及学术资料一致 |
-| 本科 | 谢菲尔德大学 AI & CS，2021.09–2025.07，学位于 2025.07.01 授予，2:1 | 正式 HEAR 与原始学位证书；不公开课程分数和排名 |
-| 硕士 | 人工智能硕士课程，2025–2026，论文已提交；成绩与授位待确认 | 最近 CV、申请事实核对资料与已提交论文；未发现后续正式授位证明 |
-| 硕士具体日期 | 只使用有依据的年份，不把不同文件日期混成授位日期 | 旧 CV、预期完成时间、论文封面和网申字段存在版本差异 |
-| 硕士研究 | QuPath / Cellpose-DINO / Cyto R-CNN / CSGO 四流程比较 | 采用较新论文，而非旧申请文件中的早期方案 |
-| 硕士结果 | 没有明确证据表明融合优于仅图像基线 | 保留研究结论边界，不改写成显著改善或临床验证 |
-| 本科项目结果 | 报告中的 mixed-test accuracy 为 76.25% | 数值属于特定混合测试设置，本次没有重跑原实验；不能代替其他数据集结果 |
-| 博士 | 杜伦面试完成，等待结果；2027.01 是拟议入学时间 | 最新可见面试进展；没有正式录取或注册证据 |
-| 拟研究方向 | 环境与传感器变化下的可靠视觉分割 | 标记为拟开展研究，不能与完成的实验混淆 |
-| Marginloom | 个人 AI 可靠性研究/软件原型，使用 AI 辅助开发 | 公开 GitHub 仓库及 README/配置已查阅；未声称经营、收入、客户或临床有效性 |
-| IAFM | 个人投资与财务管理应用 | 页面提供 iafm.zhongjiehuang.com 访问入口；私人账户与运行数据不随作品集发布 |
-| 就业、实习、额外奖项、论文发表、语言分数 | 不添加没有证据的条目 | 避免将课程或个人项目包装成工作任职或正式发表 |
+| Name | Zhongjie Huang | Consistent across the earlier portfolio and academic records |
+| BSc | Sheffield AI & CS, September 2021–July 2025; awarded 1 July 2025; 2:1 | Formal HEAR and original certificate; module marks/rankings excluded |
+| MSc | Artificial Intelligence study, 2025–2026; dissertation submitted; results and award pending | Recent CV, application fact-check material and submitted dissertation; no later award evidence located |
+| Exact MSc dates | Supported years only; document dates are not combined into an award date | Earlier CVs, expected dates, dissertation cover and form fields differ by version |
+| MSc research | Four-pipeline QuPath/Cellpose-DINO/Cyto R-CNN/CSGO comparison | Based on the newer dissertation rather than an early application proposal |
+| MSc findings | No clear evidence that fusion outperformed the image-only baseline | Do not relabel the finding as significant improvement or clinical validation |
+| BSc result | Reported mixed-test accuracy of 76.25% | Specific mixed-test setting; not rerun during this update or interchangeable with another dataset's result |
+| PhD | Durham interview completed, outcome pending; January 2027 proposed entry | Latest visible interview progress; no formal offer/registration evidence |
+| Proposed direction | Reliable visual segmentation under environmental and sensor shift | Future research, separate from completed experiments |
+| Marginloom | Personal AI-reliability research/software prototype, developed with AI assistance | Public repository/README/configuration reviewed; no business, revenue, customer or clinical-effectiveness claim |
+| IAFM | Personal investment and financial-management application | Public application entry; private accounts and operational records excluded |
+| Employment, internships, extra awards, publications and language scores | No unsupported entries | Coursework/personal projects are not employment or formal publications |
 
-## 主要内容来源
+## Sources
 
-主要依据包括已提供的本科学位证书、BSc Transcript / HEAR、2025 年本科最终报告、2026 年 9 月 30 日硕士论文、2026 年 10 月 LinkedIn 更新交接资料、最近求职 CV 和杜伦面试事实核对材料。
+The review used the supplied undergraduate certificate, BSc transcript/HEAR, 2025 BSc final report, MSc dissertation dated 30 September 2026, October 2026 LinkedIn handoff, recent job-search CV and Durham interview fact-check material.
 
-这些文件用于核实职业简介，不随网站分发。内部检索记录、原始文件标识、私人通信内容及研究数据均未加入本包。
+These records supported the professional profile but are not distributed with the website, apart from the separately approved public certificate. Internal retrieval records, raw identifiers, private correspondence and research data are excluded.
 
-公开项目资料来源：
+Public references:
 
-- GitHub 个人账号：<https://github.com/zhjpersonal83-cell>
-- Marginloom 公开源码：<https://github.com/zhjpersonal83-cell/marginloom>
-- IAFM 源码：<https://github.com/zhjpersonal83-cell/Investment_and_Financial_Management>
-- LinkedIn 地址依据已确认交接资料保留；本轮未验证其页面实时内容。
-- 原站公开邮箱 `zhuang68@sheffield.ac.uk` 保留；未替换为私人邮箱或电话号码。
+- Account: https://github.com/zhjpersonal83-cell
+- Marginloom: https://github.com/zhjpersonal83-cell/marginloom
+- IAFM: https://github.com/zhjpersonal83-cell/Investment_and_Financial_Management
+- The LinkedIn address was retained from the confirmed handoff; this historical review did not verify its live page.
+- Existing public email `zhuang68@sheffield.ac.uk` was retained, rather than replaced with a private address or phone number.
 
-Marginloom 曾有 2026 年 10 月 4 日指定 GitHub Actions 运行的成功记录。这是历史提交的记录，不是这次重新执行或对当前软件的全面审计，因此网站没有将其写成当前认证。
+Marginloom had a successful recorded GitHub Actions run for a specific commit on 4 October 2026. That historical record was not a new execution or full audit of current software and was not presented as current certification.
 
-## 结构与功能
+## Structure and features at v4.0.2
 
-项目经历保留四项，首页、项目目录和案例页提供 Marginloom 与 IAFM 的应用及 GitHub 入口。IAFM 说明新增十币种报告、成对内部转账分录与服务端通胀维护权限；不将针对性检查描述为独立安全认证。已移除的两项经历继续从项目详情、搜索、站点地图、公开资料 JSON 与中英文简历中排除。双语切换对应当前页面，原课程目录 32 条记录保留。
+Four project entries were retained. The homepage, directory and case studies linked to Marginloom/IAFM applications and source. The IAFM narrative described ten-currency reports, paired transfers and server-controlled inflation maintenance, without elevating targeted checks into independent security certification. Removed project experiences stayed excluded from detail pages, search, sitemap, public JSON and both CVs. Language switching retained the current page, and all 32 coursework entries remained.
 
-源码与展示数据分开：公开资料由 `content/profile.json` 维护，课程由 `content/coursework.json` 维护，生成的页面和下载数据共用来源。深浅主题、快捷导航、组合筛选与复制功能采用渐进增强，核心资料直接写入 HTML。
+Editable source and display output were separated. `content/profile.json` and `content/coursework.json` supplied generated pages/downloads. Themes, command search, combined filters and copying were progressive enhancements; core information was embedded in HTML.
 
-PDF 简历另有可重复生成脚本和资料指纹检查。网站打包生成静态目录与同内容 WAR，并验证证书原件及所有部署副本的一致性。
+PDF CVs had a reproducible generator and source fingerprints. Packaging created matching static/WAR outputs and checked original-certificate and deployment-copy integrity.
 
-## 实际验证范围
+## Verification scope
 
-完整自动化结果见 `TEST_REPORT.md`。补充检查与交互、PDF 排版验证见 `VERIFICATION_NOTES.md`。
+See `TEST_REPORT.md` for automated checks and `VERIFICATION_NOTES.md` for supplementary interaction/PDF review.
 
-v4.0.2 本地构建通过 13,353 项结构与部署副本校验，双语卡片及详情页的源码链接和无图片的表情识别详情均已检查。新文本所需字体字符已补齐，中英文 PDF 简历均重建为两页并通过资料指纹检查。2026-10-17 线上核验：个人网站首页、IAFM 与 Marginloom 详情页及两个应用入口均通过 HTTPS 返回 HTTP 200。构建脚本本身仍不负责部署。
+Version 4.0.2 passed 13,353 structural/deployment-copy checks. Bilingual source links and text-only emotion recognition were checked. Required font glyphs were supplied, and both two-page PDFs were rebuilt with valid fingerprints. On 17 October 2026 the homepage, IAFM/Marginloom detail pages and both application entry points returned HTTP 200 over HTTPS. The build script itself did not deploy.
 
-历史范围：早期构建记录中的项目卡片浏览器检查、简历排版检查，以及“未执行服务器部署”说明，分别只证明当时记录的版本与步骤。此次入口检查不等于完整手机真机、全部路由、响应头、404 或跨浏览器验收。
+Earlier card-browser checks, CV-layout reviews and no-deployment statements establish only their recorded versions/steps. Entry-point checks do not imply full physical-device, all-route, header, 404 or cross-browser acceptance.
 
-## 获得新信息后优先更新
+## Updates when new evidence arrives
 
-1. 收到硕士正式成绩及授位通知后，更新 `education` 和 `timeline`，同时重生成中英文简历。
-2. 收到博士正式录取后，再更新申请状态；正式注册开始之前，不将身份改为 PhD student。
-3. 更换公开联系邮箱或网站域名时，同步修改资料、站点配置及 PDF 简历。
-4. 项目真正发布、完成实测或有公开成果后，再增加相应证据链接和明确时间；不自动继承旧测试结论。
+1. After formal MSc results/award confirmation, update `education` and `timeline`, then regenerate both CVs.
+2. Update the PhD application status after a formal offer; do not use PhD-student status before registration begins.
+3. Change public contact/domain values consistently in profile data, site configuration and PDFs.
+4. Add dated evidence links after actual project releases, measurements or public outcomes; do not automatically inherit old test conclusions.

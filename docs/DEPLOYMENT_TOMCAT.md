@@ -1,92 +1,92 @@
-# Tomcat 部署与回滚说明
+# Tomcat deployment and rollback
 
-当前版本 v4.0.2 已于 2026-10-17 部署到 `https://www.zhongjiehuang.com`。首页、两个应用案例页以及 IAFM、Marginloom 应用入口均核验通过 HTTPS 返回 HTTP 200。
+Historical baseline: v4.0.2 was deployed to https://www.zhongjiehuang.com on 17 October 2026. The homepage, two application case studies, and the IAFM/Marginloom entry points returned HTTP 200 over HTTPS. Subsequent OutcomeLab and CV releases are recorded separately.
 
-历史说明：原 v4.0.0 文件交付阶段只准备静态文件与 WAR，未连接或修改服务器；该记录不再描述当前发布状态。以下保留作为以后部署与回滚的操作参考，每次执行前仍须核对实际 Tomcat 实例、虚拟主机、域名、现有应用与备份位置。
+The original v4.0.0 delivery prepared static files and a WAR without connecting to a server. That historical record is not the current deployment status. Before each future deployment, verify the actual Tomcat instance, virtual host, domain, existing applications and backup location.
 
-## 1. 交付物与使用范围
+## 1. Deliverables and scope
 
-| 路径 | 用途 |
+| Path | Purpose |
 | --- | --- |
-| `site/` | 生成的网页、图片、公开文件与 `WEB-INF/web.xml` |
-| `deploy/ROOT/` | 与 `site/` 逐文件一致的展开应用 |
-| `deploy/ROOT.war` | 与上述目录内容一致的 WAR，默认用于网站根路径 |
-| `content/`、`sources/`、`static/`、`scripts/`、`docs/` | 编辑、构建与维护资料；不应作为公开网站根目录 |
-| `docs/BUILD_MANIFEST.json` | 交付文件大小与 SHA-256 清单；不包含清单自身的摘要 |
-| `docs/TEST_REPORT.md` | 本地静态校验的真实结果与未覆盖事项 |
+| `site/` | Generated pages, images, public files and `WEB-INF/web.xml` |
+| `deploy/ROOT/` | Exploded application matching `site/` file for file |
+| `deploy/ROOT.war` | Matching WAR, normally for the root context |
+| `content/`, `sources/`, `static/`, `scripts/`, `docs/` | Editable source and maintenance material, not a public web root |
+| `docs/BUILD_MANIFEST.json` | File sizes and SHA-256 hashes, excluding its own hash |
+| `docs/TEST_REPORT.md` | Recorded local checks and untested areas |
 
-网站自身只需要静态资源服务，不包含 Java、JSP、Servlet 业务代码或数据库。Tomcat 仍需它自身支持的 Java 运行环境；本项目的构建与打包只依赖 Python 3 标准库。Tomcat 的 Default Servlet 可以提供静态资源。[官方说明](https://tomcat.apache.org/tomcat-10.1-doc/default-servlet.html)
+The website contains static resources rather than Java/JSP/Servlet business code or a database. Tomcat still needs its supported Java runtime; the core build/package tools need only Python's standard library. The Default Servlet serves static resources; see the [official documentation](https://tomcat.apache.org/tomcat-10.1-doc/default-servlet.html).
 
-## 2. 先确定访问路径并重新构建
+## 2. Choose the public path and rebuild
 
-在解压后的 `zhongjie-portfolio` 目录运行：
+From the extracted `zhongjie-portfolio` directory:
 
 ```bash
 python3 build.py --base-url https://www.zhongjiehuang.com
 python3 scripts/package.py
 ```
 
-这些命令只在本机生成和检查文件。`package.py` 会更新 `deploy/ROOT/`、`deploy/ROOT.war`、测试报告和构建清单，然后在项目目录之外创建交付 ZIP；校验失败时不会替换交付 ZIP。
+These commands generate and check local files. `package.py` updates the exploded application, WAR, test report and build manifest, then creates the delivery ZIP outside the project. A failed validation does not replace that ZIP.
 
-| 目标网址 | 构建时的 `--base-url` | Tomcat 中的 WAR 名称 |
+| Public address | Build `--base-url` | Tomcat WAR name |
 | --- | --- | --- |
 | `https://www.zhongjiehuang.com/` | `https://www.zhongjiehuang.com` | `ROOT.war` |
 | `https://example.com/portfolio/` | `https://example.com/portfolio` | `portfolio.war` |
 
-子路径使用示例：
+For a subpath:
 
 ```bash
 python3 build.py --base-url https://example.com/portfolio
 python3 scripts/package.py
 ```
 
-为 `/portfolio/` 部署时，上传阶段把最新 `deploy/ROOT.war` 命名为 `portfolio.war` 即可。交付包只保留一份 WAR，避免两份内容漂移。不要仅重命名旧 WAR：先用最终域名和子路径重建 canonical、hreflang、sitemap 以及 404 的导航与资源 URL。
+Upload the newly built `deploy/ROOT.war` as `portfolio.war` for `/portfolio/`. Keep a single packaged WAR to avoid divergence. Renaming an old WAR is insufficient: rebuild canonical, hreflang, sitemap and 404 navigation/asset URLs for the final domain and path.
 
-Tomcat 自动部署按应用文件名推导上下文路径：大写 `ROOT` 对应根应用；`portfolio.war` 对应 `/portfolio`。如果服务器已用外置 Context Descriptor 指定 `docBase`，应遵循已有配置，不能直接假定 WAR 文件名就是生效路径。[官方命名规则](https://tomcat.apache.org/tomcat-10.1-doc/config/context.html#Naming)
+Tomcat normally derives the context from the application filename: uppercase `ROOT` is the root application, while `portfolio.war` maps to `/portfolio`. An external Context Descriptor with `docBase` may override the deployment source, so inspect existing configuration. See [official naming rules](https://tomcat.apache.org/tomcat-10.1-doc/config/context.html#Naming).
 
-## 3. 安装前核对与备份
+## 3. Inspect and back up before installation
 
-1. 确认真正运行的 `CATALINA_BASE`、Host `appBase`、服务管理方式及反向代理配置。`webapps` 是常见默认位置，但不能凭目录名猜测当前服务实例。
-2. 查看根应用是否属于本作品集。若已有其他业务占用根路径，先选定 `/portfolio/` 或单独虚拟主机，避免覆盖该业务。
-3. 确认同名 Context Descriptor 是否存在，例如实例配置目录中的 `conf/Catalina/localhost/ROOT.xml` 或 `portfolio.xml`。它可能影响实际部署来源。
-4. 进入计划好的维护窗口，按服务器现有流程停止或下线目标应用。将当前目标 WAR、同名展开目录和相关 Context Descriptor **备份到 `appBase/webapps` 之外**，记录原路径、权限及摘要。备份不要以另一个 WAR 名称留在自动部署目录，否则可能被识别为新应用。
-5. 核验新 WAR 摘要与交付包一致，然后只替换所选应用的同名文件。保留其他应用目录及其 WAR；不要对整个 `webapps` 目录执行批量删除。
+1. Verify the running `CATALINA_BASE`, Host `appBase`, service manager and reverse proxy. A directory named `webapps` does not establish the active instance.
+2. Confirm the root application belongs to this portfolio. If another application occupies it, use a selected subpath or separate virtual host.
+3. Check for a matching Context Descriptor, such as `conf/Catalina/localhost/ROOT.xml` or `portfolio.xml`, which can affect deployment.
+4. During the planned maintenance window, stop or take down only the target application using the established process. Back up its WAR, exploded directory and relevant descriptor **outside `appBase/webapps`**, recording original paths, permissions and hashes. A backup WAR left in the auto-deploy directory may become a separate application.
+5. Verify the new WAR hash, then replace only the chosen application. Retain other application directories and WARs; do not bulk-delete `webapps`.
 
-Tomcat 支持启动时部署或运行时自动部署，但具体行为取决于 Host 的 `deployOnStartup`、`autoDeploy`、`unpackWARs` 等配置。不要把“复制 WAR”当成在所有服务器上都立即完成部署的保证。[官方部署流程](https://tomcat.apache.org/tomcat-10.1-doc/deployer-howto.html)
+Startup/runtime deployment depends on `deployOnStartup`, `autoDeploy`, `unpackWARs` and other Host settings. Copying a WAR does not prove immediate deployment on every server. See the [official deployment process](https://tomcat.apache.org/tomcat-10.1-doc/deployer-howto.html).
 
-## 4. 404、子路径与公开文件
+## 4. Error pages, context paths and public files
 
-包内 `WEB-INF/web.xml` 将 404 映射到 `/404.html`；该位置相对于当前 Web 应用上下文。默认错误页面为英文，并提供中文对应页面入口。
+`WEB-INF/web.xml` maps 404 responses to `/404.html` relative to the current application context. The default error page is English and links to its Chinese counterpart.
 
-仅两种语言的 404 页面使用配置的绝对 canonical 基址生成站内导航与资源 URL，因此在深层错误网址被内部转发到 404 页面后，样式和返回首页入口仍指向正确位置。404 不设置 HTML `<base>`，其 `#main` 跳过导航链接仍指向当前错误文档。其余 34 个正常页面的浏览链接与资源地址使用文档相对路径。校验器模拟了带与不带末尾斜杠的多级缺失网址下的 URL 解析；实际服务器仍须验证 404 返回码与链接，离线解析不能证明服务器配置已经生效。
+Only the two error pages use the absolute canonical base for internal navigation and assets. This keeps styling and home links valid after internal forwarding from a nested missing URL. They do not set `<base>`; `#main` remains relative to the error document. Normal pages use document-relative navigation and assets. Offline checks simulate nested missing paths with and without trailing slashes, but the actual server must still be checked for status codes and correct routing.
 
-学位证书保留原文件，SHA-256 为：
+The original certificate is preserved with SHA-256:
 
 ```text
 3a1c5afda69264df17715098d05bb5ad24d8888676857c1a0ccff1b04f486087
 ```
 
-部署公开文件与部署整个源码目录不同。对 Tomcat，使用 WAR 或展开应用；对静态服务器，使用 `site/`。不要把整个交付 ZIP 解压到一个可浏览下载的公开目录。
+Publishing selected website files differs from publishing the full source tree. Use a WAR/exploded application for Tomcat, or `site/` for a static host. Do not extract the complete delivery ZIP into a publicly browsable directory.
 
-## 5. 部署后的实际检查
+## 5. Post-deployment checks
 
-以下是每次部署后的完整验收清单。本次已核验的入口 HTTP 200 见开头及第 7 节，不能据此视为下列所有事项均已通过：
+The recorded entry-point checks do not establish all of the following:
 
-- 英文首页、中文首页、项目详情、课程、CV、联系与隐私页面能直接打开；刷新深层页面不报错。
-- 从深层页面切换语言仍停留在同一内容页；所有 CSS、JS、图片、简历和证书请求成功。
-- 随机不存在的多级路径返回 HTTP `404`，显示作品集错误页；错误页资源和中英文入口有效。
-- 目录网址缺少末尾斜杠时行为正确，不发生循环跳转；根路径和目标子路径符合实际部署方案。
-- 手机和桌面浏览器验证导航、课程筛选、主题切换、键盘操作、打印以及 PDF 下载。
-- 域名、HTTPS、MIME、缓存、反向代理安全响应头与访问日志符合服务器配置；canonical 和 sitemap 指向当前正式地址。
-- `WEB-INF` 内容不能被外部直接下载，其他原有应用保持可用。
+- Open English/Chinese homepages, project details, coursework, CV, contact and privacy pages directly; refresh deep pages.
+- Switch languages while retaining the content page; confirm CSS, JS, image, CV and certificate requests succeed.
+- Test a random nested missing path: HTTP 404, the portfolio error page and working bilingual home/assets links.
+- Check directory URLs without trailing slashes for correct redirects and no loops; confirm root/subpath routing matches the plan.
+- Check mobile and desktop navigation, filtering, themes, keyboard use, printing and PDF downloads.
+- Check domain, HTTPS, MIME, caching, proxy security headers and logs; canonical/sitemap URLs must use the actual public address.
+- Ensure `WEB-INF` cannot be downloaded and other applications remain available.
 
-## 6. 回滚
+## 6. Rollback
 
-按同一维护流程停止或下线本次目标应用；将本次 WAR 和展开目录移到 `webapps/appBase` 之外留作排查，再恢复上一版目标应用及必要的 Context Descriptor。恢复权限后按原流程启动，核对首页、深层页、404 和其他应用。回滚只操作本作品集的目标上下文，不清空整个应用目录。
+Use the same maintenance procedure to stop or take down the target context. Move the failed WAR and exploded directory outside `webapps/appBase` for investigation; restore the previous target application and any necessary descriptor. Restore permissions, start through the established process, and check the homepage, deep pages, 404 and other applications. Do not empty the whole application directory.
 
-## 7. 本次验证边界
+## 7. Historical verification boundary
 
-v4.0.2 使用纯 Python 完成 13,353 项静态结构与部署副本检查，具体结果见 `docs/TEST_REPORT.md`。2026-10-17 另外实测以下线上 HTTPS 地址均返回 HTTP 200：
+Version 4.0.2 passed 13,353 Python structural/deployment-copy checks. On 17 October 2026 these HTTPS addresses also returned HTTP 200:
 
 - `https://www.zhongjiehuang.com/`
 - `https://www.zhongjiehuang.com/projects/investment-financial-management/`
@@ -94,4 +94,4 @@ v4.0.2 使用纯 Python 完成 13,353 项静态结构与部署副本检查，具
 - `https://iafm.zhongjiehuang.com/`
 - `https://marginloom.zhongjiehuang.com/`
 
-历史验证记录中的“未运行 Tomcat、nginx 或真实服务器检查”描述原文件准备阶段，而非本次已部署版本。HTTP 入口核验与离线结构校验的范围不同；后续改动仍需重新检查相应页面、浏览器行为和服务器配置。
+Earlier statements that Tomcat/Nginx/live checks were not executed describe initial file preparation. Entry-point checks and offline validation have different scopes; later changes require the relevant pages, browser behaviour and server settings to be checked again.

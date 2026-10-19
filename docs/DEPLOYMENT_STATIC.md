@@ -1,52 +1,48 @@
-# 静态服务器部署说明
+# Static-server deployment
 
-本网站可由 nginx 或其他支持目录首页和自定义 404 的静态服务器提供。本轮只交付文件，没有发布网站。后续应先确认目标域名、网站根路径或 `/portfolio/` 子路径，再执行实际部署。
+Nginx or another static host supporting directory indexes and custom 404 pages can serve this site. This document originated during file preparation, when no server was changed. Later live deployments are recorded separately. Before a future deployment, verify the domain, web root and any `/portfolio/` context path.
 
-## 1. 生成静态站点
-
-在项目目录执行：
+## 1. Build
 
 ```bash
 python3 build.py --base-url https://www.zhongjiehuang.com
 python3 scripts/package.py
 ```
 
-网站内容来自 `content/`、源样式/脚本以及 `static/`；构建后的公开文档根目录为 `site/`。静态服务器不需要 `ROOT.war`。源码、维护文档及完整交付 ZIP 应存放在公开目录之外。
+Content comes from `content/`, source styles/scripts and `static/`. The generated public document root is `site/`; a static server does not need `ROOT.war`. Keep source, maintenance documents and delivery ZIPs outside the web root.
 
-如果实际地址为 `https://example.com/portfolio/`，构建命令应改为：
+For `https://example.com/portfolio/`:
 
 ```bash
 python3 build.py --base-url https://example.com/portfolio
 python3 scripts/package.py
 ```
 
-构建基址用于 canonical、hreflang、sitemap 和结构化数据。正常页面的导航与资源使用文档相对路径；仅 404 页面的站内导航与资源使用配置的绝对 canonical 基址，确保多级缺失网址下仍能正确解析。404 保留当前文档的 `#main` 跳过导航链接，不设置 HTML `<base>`。更改正式域名或部署子路径后需要重新构建。
+The base URL supplies canonical, hreflang, sitemap and structured-data URLs. Normal navigation and assets are document-relative. Only 404 pages use the absolute canonical base, allowing internal forwarding at deeply nested missing URLs. They retain the current document's `#main` skip link and do not set an HTML `<base>`. Rebuild after changing the public domain or context path.
 
-## 2. nginx 根路径示例
+## 2. Nginx root-context example
 
-参考 `deploy/nginx.conf.example`。它包含位于 `http` 上下文的缓存 `map` 和一个根路径虚拟主机示例。域名、文档路径、监听方式及 TLS 均需与真实服务器匹配，不应覆盖已有 nginx 主配置。
+`deploy/nginx.conf.example` contains an `http`-context cache `map` and a root-context virtual host. Adjust its domain, document path, listeners and TLS to the actual server; do not overwrite the main Nginx configuration.
 
-该示例使用以下行为：
-
-| 项目 | 配置目的 |
+| Setting | Purpose |
 | --- | --- |
-| `root` 指向 `site/` | 只提供生成的公开站点 |
-| `index index.html` | 处理目录首页 |
-| `try_files $uri $uri/ =404` | 已有文件正常返回，不存在路径保持 404 |
-| `error_page 404 /404.html` | 提供自定义错误页，不把 404 改为 200 |
-| `etag on` | 为静态资源提供 ETag |
-| HTML 与发现文件 `no-cache` | 可以缓存，但使用前需要重新验证 |
-| 含内容哈希的 CSS/JS 缓存一年 | 内容改变即换文件名，避免旧资源复用 |
-| 其他静态文件缓存一小时 | 控制图片和 PDF 的更新延迟 |
-| `nosniff`、Referrer Policy、限制嵌入 | 提供基本的响应头设置 |
+| `root` points to `site/` | Serve only generated public content |
+| `index index.html` | Resolve directory indexes |
+| `try_files $uri $uri/ =404` | Serve existing paths and preserve 404 for missing paths |
+| `error_page 404 /404.html` | Use the custom error page without changing the status to 200 |
+| `etag on` | Supply ETags |
+| `no-cache` for HTML/discovery files | Allow storage but require revalidation |
+| One-year cache for content-hashed CSS/JS | Changed content receives a new filename |
+| One-hour cache for other static files | Bound image/PDF update delay |
+| `nosniff`, referrer policy and embedding restrictions | Basic response headers |
 
-nginx 的 `try_files`、`error_page` 和 `etag` 行为见 [官方核心模块文档](https://nginx.org/en/docs/http/ngx_http_core_module.html)。示例把所有 `add_header` 放在同一层，并用 `map` 选择缓存策略，避免子级声明缓存响应头时意外失去继承的安全响应头；相关规则见 [Headers 模块](https://nginx.org/en/docs/http/ngx_http_headers_module.html) 与 [Map 模块](https://nginx.org/en/docs/http/ngx_http_map_module.html)。
+See the [official core-module documentation](https://nginx.org/en/docs/http/ngx_http_core_module.html) for `try_files`, `error_page` and `etag`. All `add_header` directives are at one level; a `map` chooses caching, avoiding accidental loss of inherited security headers. See the [Headers](https://nginx.org/en/docs/http/ngx_http_headers_module.html) and [Map](https://nginx.org/en/docs/http/ngx_http_map_module.html) modules.
 
-示例 CSP 只限制对象内容、基地址和页面被嵌入的来源，不限制脚本/样式加载，以兼容当前页面结构化数据与样式。若后续要增加完整脚本/样式来源限制，应为实际页面中的内联内容设计 hash 或 nonce 并进行浏览器验证。示例不是已配置好的 HTTPS 服务，证书与 HTTP 到 HTTPS 的跳转应沿用或补全服务器既有配置。
+The example CSP restricts object content, base URLs and framing, but does not restrict script/style loading, retaining compatibility with current inline structured data and styles. A full source policy needs hashes or nonces for actual inline content and browser validation. This example is not an already configured HTTPS service; retain or complete the server's certificate and HTTP-to-HTTPS redirect setup.
 
-## 3. nginx 子路径示例
+## 3. Subpath example
 
-为避免 `alias` 与文件查找的路径组合出现歧义，可以使用 `root` 加实际子目录。示意结构为：
+Use `root` with a real subdirectory to avoid ambiguity between `alias` and file lookup:
 
 ```text
 /srv/www/portfolio-public/portfolio/index.html
@@ -54,7 +50,7 @@ nginx 的 `try_files`、`error_page` 和 `etag` 行为见 [官方核心模块文
 /srv/www/portfolio-public/portfolio/assets/...
 ```
 
-即把 `site/` 的内容放在 `portfolio-public/portfolio/` 中，再把以下路由合并到经过核对的虚拟主机；示意路径需替换成真实位置：
+Copy the contents of `site/` into `portfolio-public/portfolio/`, then merge the following routes into the verified virtual host, replacing example paths:
 
 ```nginx
 location = /portfolio {
@@ -78,23 +74,23 @@ location ~* ^/portfolio/(WEB-INF|META-INF)(/|$) {
 }
 ```
 
-配合根路径示例中的 MIME、缓存、安全响应头与隐藏文件限制使用，并根据已有 `location` 的匹配关系检查冲突。上面的 `error_page` 只放在作品集路由内，避免直接改变同一虚拟主机上其他网站的错误页。
+Combine this with MIME, cache, security-header and hidden-file restrictions from the root example. Check conflicts with existing location matching. Keep `error_page` within the portfolio route to avoid changing other sites' error handling.
 
-子路径站点生成的 `portfolio/robots.txt` 不能代替域名根部的 `/robots.txt`。如需要搜索引擎发现规则，应在已有域名根部 `robots.txt` 中合并本网站 sitemap 的完整 URL，保留其他网站的规则。[Google 官方 robots.txt 位置说明](https://developers.google.com/crawling/docs/robots-txt/create-robots-txt)
+A generated `portfolio/robots.txt` does not replace the domain-root `/robots.txt`. If crawler discovery is required, merge this site's complete sitemap URL into the root file while retaining other rules. See [Google's robots.txt location guidance](https://developers.google.com/crawling/docs/robots-txt/create-robots-txt).
 
-## 4. 文件公开范围
+## 4. Published files
 
-`WEB-INF/web.xml` 随站点保留用于 Tomcat 打包。nginx 不会自动套用 Java Web 应用的目录保护规则，示例因此明确阻止 `WEB-INF` 和 `META-INF` 路径。其他静态平台可在发布副本中排除这两个目录，但不要手工改变源码中的原始证书或生成文件以规避构建校验。
+`WEB-INF/web.xml` is retained for Tomcat packaging. Nginx does not automatically apply Java web-application directory protection, so the example explicitly blocks `WEB-INF` and `META-INF`. Other static platforms may exclude them from the publishing copy; do not alter original certificates or generated source files to evade validation.
 
-隐私页面描述的是本静态作品集当前行为；未来接入分析工具、留言表单、登录、外部字体或第三方脚本后，应同步更新该页面与服务器策略。当前交付不依赖后端表单服务。
+The privacy page describes the current static portfolio. Adding analytics, forms, login, external fonts or third-party scripts requires a corresponding policy and server review. This delivery needs no backend form service.
 
-## 5. 发布、验收和回滚
+## 5. Publish, verify and roll back
 
-1. 保留现有发布目录或创建带版本标识的发布副本；备份放在公开文档根目录之外。
-2. 将新的 `site/` 内容传到计划中的目标发布位置；核对文件摘要。不要把整个项目目录设置为 nginx `root`。
-3. 按服务器现有流程检查合并后的 nginx 配置语法，确认无冲突后再切换站点目录或重新加载配置。本次没有执行这些操作。
-4. 验证英文和中文页面、深层页面刷新、课程筛选、导航、主题切换、CV/证书、打印、手机布局、HTTP 状态码及 MIME/缓存/安全响应头。
-5. 专门访问一个多级不存在路径，确认 HTTP 404、样式和返回首页入口正常；确认 `WEB-INF/web.xml` 不能公开下载。
-6. 若验收失败，按服务器既有流程恢复上一版目录或配置；只回滚本作品集的文件与路由，保留其他网站。
+1. Retain the current release or create a versioned copy; store backups outside the public web root.
+2. Upload `site/` to the planned release location and verify hashes. Never make the full project the Nginx root.
+3. Follow the existing server procedure to syntax-check the merged configuration, then switch the directory or reload after confirming no conflicts. The original file-preparation run did not perform these operations.
+4. Check both languages, deep refresh, coursework filters, navigation, themes, CV/certificate links, print, mobile layout, status codes, MIME, caching and security headers.
+5. Test a nested missing URL: expect HTTP 404, working styling and a home link. Confirm `WEB-INF/web.xml` cannot be downloaded.
+6. On failure, restore the previous directory/configuration using the server's established process. Roll back only this portfolio's files/routes.
 
-本地结构检查结果见 `docs/TEST_REPORT.md`。HTTP 行为、nginx 配置语法、TLS 和真实浏览器兼容性需要在最终服务器环境中验证，不能由离线 ZIP 内容检查推断为已通过。
+Offline structure checks are recorded in `docs/TEST_REPORT.md`. They do not establish HTTP behaviour, valid Nginx syntax, TLS or real-browser compatibility on the final host.
