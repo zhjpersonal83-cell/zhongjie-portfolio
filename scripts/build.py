@@ -184,7 +184,7 @@ class Page:
         if project.get('image'):
             visual = '<div class="project-image">' + self.img(project['image'], self.w('The academic facial-expression recognition application interface', '本科表情识别应用的界面截图')) + '</div>'
         else:
-            glyph = {"histology-segmentation": "01 / VISION", "emotion-recognition": "02 / VISION", "marginloom": "03 / EVIDENCE", "investment-financial-management": "04 / SYSTEMS"}.get(project['id'], f'{index + 1:02d} / SOFTWARE')
+            glyph = {"histology-segmentation": "01 / VISION", "emotion-recognition": "02 / VISION", "marginloom": "03 / EVIDENCE", "investment-financial-management": "04 / SYSTEMS", "outcomelab": "05 / LEARNING"}.get(project['id'], f'{index + 1:02d} / SOFTWARE')
             visual = f'<div class="project-visual" aria-hidden="true"><span class="project-glyph">{esc(glyph)}</span><span>{esc(cat_label)}</span></div>'
         actions = self.link("projects/"+project["id"]+"/", self.l("view_project") + " →", klass="project-link")
         if project.get('repository'):
@@ -312,8 +312,8 @@ class Builder:
         flow = '<ol class="method-flow">' + ''.join(f'<li class="method-step"><span class="method-number" aria-hidden="true">{i+1:02d}</span><span>{esc(label)}</span></li>' for i, label in enumerate(steps)) + '</ol>'
         featured = '<section class="section alt" id="projects"><div class="container">' + p.section_head(p.l('projects'), p.w('Selected work.', '精选项目。'), p.w('The question, the implementation and the evidence for each project.', '逐项呈现研究问题、实现过程与已有证据。'), p.link('projects/', p.l('all_projects') + ' →'))
         featured += '<article class="feature-project"><div class="feature-copy"><p class="eyebrow">' + esc(p.t(msc['subtitle'])) + '</p><h3>' + esc(p.t(msc['title'])) + '</h3><p>' + esc(p.t(msc['summary'])) + '</p><p class="muted">' + esc(p.t(msc['status_label'])) + '</p>' + p.tags(msc['stack'][:4]) + p.link('projects/histology-segmentation/', p.l('view_project') + ' →', 'text-link') + '</div><div class="feature-visual">' + flow + '<p class="muted">' + esc(p.w('Segmentation quality, measurement reliability and predictive utility are separate questions.', '分割质量、测量可靠性和预测效用，是三个需要分别回答的问题。')) + '</p></div></article>'
-        selected = [self.projects[key] for key in ('emotion-recognition', 'marginloom', 'investment-financial-management') if key in self.projects]
-        featured += '<div class="grid three">' + ''.join(p.project_card(x, i+1) for i, x in enumerate(selected)) + '</div></div></section>'
+        selected = [self.projects[key] for key in ('emotion-recognition', 'outcomelab', 'marginloom', 'investment-financial-management') if key in self.projects]
+        featured += '<div class="grid two">' + ''.join(p.project_card(x, i+1) for i, x in enumerate(selected)) + '</div></div></section>'
         training = '<section class="section" id="skills"><div class="container">' + p.section_head(p.l('education'), p.w('A foundation in AI and computer science.', '人工智能与计算机科学的系统训练。'), '', p.link('education/', p.w('Academic background →', '了解教育背景 →'))) + '<div class="grid two">'
         for edu in data['education']:
             training += p.card(p.t(edu['degree']), p.t(edu['description']), tags=[p.t(edu['period']), p.t(edu['status_label'])], link=p.link('coursework/?programme=' + edu['id'], p.l('all_modules') + ' →'))
@@ -368,7 +368,7 @@ class Builder:
         return body
 
     def projects_page(self, p):
-        body = p.page_hero(p.l('projects'), p.w('Research questions. Working software.', '研究问题，软件实践。'), p.w('Four projects, each with its own scope, contribution and evidence. Launch Marginloom or IAFM directly, or read the case studies.', '四个项目，分别说明范围、个人贡献与证据。可直接进入 Marginloom 或 IAFM，也可阅读项目案例。'))
+        body = p.page_hero(p.l('projects'), p.w('Research questions. Working software.', '研究问题，软件实践。'), p.w('Academic projects and working software, each with clear scope and evidence. Try the live demos or explore the case studies.', '学术项目与软件实践，逐项说明范围、个人贡献与证据。可进入在线演示，也可阅读项目案例。'))
         categories = [('', p.l('all')), ('research', p.l('research_cat')), ('software', p.l('software_cat'))]
         statuses = [('', p.l('all'))]
         seen = set()
@@ -544,7 +544,7 @@ class Builder:
                     'education': page.w('University of Sheffield education, the awarded BSc, submitted MSc dissertation and current academic status.', '谢菲尔德大学教育经历、已授予的本科学位、已提交的硕士论文及当前学术状态。'),
                     'credential': page.w('The original BSc degree certificate: Artificial Intelligence and Computer Science, University of Sheffield, awarded 1 July 2025.', '原始本科学位证书：谢菲尔德大学人工智能与计算机科学，2025 年 7 月 1 日授予。'),
                     'skills': page.w('Research and engineering capabilities linked to projects, practical outputs and coursework.', '研究与工程能力，与实际项目、产出和课程学习相互对应。'),
-                    'projects': page.w('Six academic and software projects with clear contributions, project status and evidence boundaries.', '六个学术与软件项目，说明个人贡献、项目状态及证据边界。'),
+                    'projects': page.w('Academic and software projects with clear contributions, project status and evidence boundaries.', '学术与软件项目，说明个人贡献、项目状态及证据边界。'),
                     'coursework': page.w('Search 32 undergraduate and postgraduate modules by programme, level, topic or skill.', '按学位阶段、年级、主题或技能搜索 32 门本科及研究生课程。'),
                     'cv': page.w('A current public research and engineering CV with printable and PDF versions.', '最新公开研究与工程简历，提供可打印页面及 PDF 版本。'),
                     'validation': page.w('Practical notes on data independence, fair comparison, useful metrics and evaluation under shift.', '关于数据独立性、公平比较、有意义的指标及分布变化评估的实用笔记。'),

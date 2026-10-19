@@ -1,9 +1,9 @@
 {
-  "version": "4.0.2",
-  "reviewed": "2026-10-17",
+  "version": "4.0.3",
+  "reviewed": "2026-10-19",
   "base_url": "https://www.zhongjiehuang.com",
-  "html_pages": 36,
-  "projects": 4,
+  "html_pages": 38,
+  "projects": 5,
   "modules": 32,
   "assets": {
     "css": "styles.3792660ad8ba.css",

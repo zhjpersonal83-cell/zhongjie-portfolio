@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-17",
+  "updated": "2026-10-19",
   "person": {
     "name": {
       "en": "Zhongjie Huang",
@@ -548,6 +548,88 @@
       },
       "live_url": "https://iafm.zhongjiehuang.com",
       "repository": "https://github.com/zhjpersonal83-cell/Investment_and_Financial_Management"
+    },
+    {
+      "id": "outcomelab",
+      "title": {
+        "en": "OutcomeLab — Interactive AI reliability lab",
+        "zh": "OutcomeLab：交互式 AI 可靠性实验室"
+      },
+      "subtitle": {
+        "en": "Personal software project · Online learning and evaluation",
+        "zh": "个人软件项目 · 在线学习与模型评估"
+      },
+      "period": "2026",
+      "category": "software",
+      "status": "prototype",
+      "status_label": {
+        "en": "Working personal prototype",
+        "zh": "可运行的个人原型"
+      },
+      "summary": {
+        "en": "An interactive AI reliability lab where visitors challenge a classifier, teach corrections, and compare real learning on clean and shifted synthetic data.",
+        "zh": "交互式 AI 可靠性实验室：挑战分类器、提交纠正，并在原始与分布偏移的合成数据上比较真实学习效果。"
+      },
+      "role": {
+        "en": "Personal portfolio project, developed with AI assistance",
+        "zh": "个人作品集项目，使用 AI 辅助开发"
+      },
+      "stack": [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "scikit-learn",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "live_url": "https://outcomelab.zhongjiehuang.com",
+      "repository": "https://github.com/zhjpersonal83-cell/outcomelab",
+      "sections": [
+        {
+          "heading": {
+            "en": "Break it. Teach it. Measure it.",
+            "zh": "挑战、纠正、衡量。"
+          },
+          "body": {
+            "en": "Try a synthetic support ticket, correct its category, then inspect measured changes in accuracy, confidence, calibration and the confusion matrix. Corrections update a real online classifier in an isolated session; reset and rollback make experiments reversible.",
+            "zh": "输入合成客服工单并纠正分类，查看准确率、置信度、校准指标与混淆矩阵的实际变化。每次纠正都会更新会话内独立的在线分类器，并支持重置与回滚。"
+          }
+        },
+        {
+          "heading": {
+            "en": "Reproducible engineering",
+            "zh": "可复现的工程实现"
+          },
+          "body": {
+            "en": "A React and TypeScript interface connects to FastAPI and scikit-learn. Fixed data partitions, controlled drift experiments and JSON/CSV exports support inspection. Automated checks cover backend behaviour, browser workflows and Docker startup.",
+            "zh": "React 与 TypeScript 界面连接 FastAPI 和 scikit-learn。固定数据划分、可控分布偏移实验及 JSON/CSV 导出便于检查；自动验证覆盖后端行为、浏览器流程与 Docker 启动。"
+          }
+        }
+      ],
+      "outcomes": {
+        "en": [
+          "Real incremental learning with per-session isolation and model rollback.",
+          "Inspectable clean and shifted evaluation, with reproducible experiment exports."
+        ],
+        "zh": [
+          "真实增量学习、会话隔离与模型回滚。",
+          "可检查的原始与偏移评估，以及可复现的实验导出。"
+        ]
+      },
+      "limits": {
+        "en": [
+          "Synthetic demonstration data; scores are illustrative rather than production benchmarks.",
+          "Personal, non-commercial portfolio demonstration; learning gains are not guaranteed."
+        ],
+        "zh": [
+          "使用合成演示数据，指标不代表生产环境基准。",
+          "个人非商业作品集演示，不保证每次学习都改善表现。"
+        ]
+      },
+      "evidence": {
+        "en": "Public source and successful GitHub Actions run 39238690979; live HTTPS workflow verified on 19 October 2026.",
+        "zh": "依据公开源码及通过的 GitHub Actions 运行 39238690979；HTTPS 在线流程已于 2026 年 10 月 19 日核验。"
+      }
     }
   ],
   "skills": [

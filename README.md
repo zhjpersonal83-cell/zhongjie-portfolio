@@ -1,6 +1,6 @@
-# Zhongjie Huang Portfolio · v4.0.2
+# Zhongjie Huang Portfolio · v4.0.3
 
-**网站更新日期：2026-10-17；原有学术资料核对日期：2026-10-16。** 中英双语个人研究与工程作品集，包含完整源码、可直接托管的静态页面、Tomcat WAR，以及中英文公开简历。
+**网站更新日期：2026-10-19；原有学术资料核对日期：2026-10-16。** 中英双语个人研究与工程作品集，包含完整源码、可直接托管的静态页面、Tomcat WAR，以及中英文公开简历。
 
 ## 从哪里开始
 
@@ -19,10 +19,14 @@
 
 v4.0.2 已于 2026-10-17 部署到 `https://www.zhongjiehuang.com`，首页、IAFM 与 Marginloom 项目详情页以及两个应用入口均核验返回 HTTP 200。早期 v4.0.0 文件交付阶段未部署服务器的记录属于历史验证范围。现成的 `site/` 和 WAR 不需要 Python、Node.js、数据库或前端构建环境来运行。
 
+## v4.0.3 · 2026-10-19
+
+新增 OutcomeLab 简介、中英文项目页、首页与目录入口，并提供在线演示和公开 GitHub 源码链接。PDF 简历已按现有精选项目范围重新生成并核对。
+
 ## 本版内容
 
-- 36 个 HTML 页面：18 个栏目或项目页面，各有对应的中英文版本。
-- 4 个项目案例：硕士组织学图像研究、本科表情识别、Marginloom、IAFM 投资与财务管理应用。
+- 38 个 HTML 页面：19 个栏目或项目页面，各有对应的中英文版本。
+- 5 个项目案例：硕士组织学图像研究、本科表情识别、OutcomeLab、Marginloom、IAFM 投资与财务管理应用。
 - 首页和项目页面提供 [Marginloom](https://marginloom.zhongjiehuang.com) 与 [IAFM](https://iafm.zhongjiehuang.com) 的直接访问入口。
 - 两项目卡片和详情页提供对应源码入口：[marginloom](https://github.com/zhjpersonal83-cell/marginloom) 与 [Investment_and_Financial_Management](https://github.com/zhjpersonal83-cell/Investment_and_Financial_Management)。
 - IAFM 案例说明十币种报告、内部转账配对记账和服务端管理员通胀维护权限；不宣称获得独立安全认证。

@@ -17,8 +17,8 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SNAPSHOT_DATE = "2026-10-17"
-ARCHIVE_TIMESTAMP = (2026, 10, 17, 0, 0, 0)
+SNAPSHOT_DATE = "2026-10-19"
+ARCHIVE_TIMESTAMP = (2026, 10, 19, 0, 0, 0)
 DEFAULT_OUTPUT = ROOT.parent / "zhongjie-portfolio.zip"
 TOP_DIRECTORIES = {"content", "sources", "src", "static", "scripts", "docs", "site", "deploy"}
 TOP_FILES = {"README.md", "build.py", "requirements-optional.txt", "VERSION.txt", "LICENSE", "LICENSE.txt", "LICENSE.md"}
