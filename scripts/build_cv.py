@@ -282,7 +282,7 @@ def build_one(profile: dict, lang: str, destination: Path, regular: Path,
             pieces.append(para(localise(project["role"], lang), "meta"))
         for body in bodies:
             pieces.append(para(body, "small" if compact else "bullet", bullet=not compact))
-        if not compact:
+        if not compact and project["stack"]:
             pieces.append(para(" / ".join(project["stack"][:6]), "meta"))
         destinations = [link(project_url(project["id"]), labels["case"])]
         if project.get("live_url"):

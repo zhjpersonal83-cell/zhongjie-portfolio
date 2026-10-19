@@ -339,8 +339,8 @@
         "zh": "Marginloom：AI 可靠性评估工作台"
       },
       "subtitle": {
-        "en": "Personal research prototype · Evaluation and human review",
-        "zh": "个人研究原型 · 模型评估与人工复核"
+        "en": "Personal software project · When to trust AI and when to ask a person",
+        "zh": "个人软件项目 · 何时相信 AI，何时交给人复核"
       },
       "period": "2026",
       "category": "software",
@@ -350,23 +350,14 @@
         "zh": "可运行的个人原型"
       },
       "summary": {
-        "en": "A Java Web AI reliability workbench for calibration, selective prediction, human review and reproducible evidence reports, with workspace-scoped MySQL persistence.",
-        "zh": "基于 Java Web 的 AI 可靠性评估工作台，连接校准、选择性预测、人工复核与可复现证据报告，并通过 MySQL 隔离保存各工作空间的数据。"
+        "en": "An interactive workspace for understanding how much to trust AI predictions. Explore mistakes, compare when human review helps, record review notes and export the evidence behind a decision.",
+        "zh": "一个帮助理解 AI 判断是否可靠的交互工作台。查看错误、比较哪些情况需要人工复核、记录复核意见，并导出支持决策的证据。"
       },
       "role": {
         "en": "Personal research and software prototype, developed with AI assistance",
         "zh": "个人研究与软件原型，使用 AI 辅助开发"
       },
-      "stack": [
-        "Java 21",
-        "Servlet 4",
-        "Maven",
-        "Tomcat 9",
-        "JDBC / MySQL",
-        "HTML / CSS / JavaScript",
-        "JUnit",
-        "GitHub Actions"
-      ],
+      "stack": [],
       "repository": "https://github.com/zhjpersonal83-cell/marginloom",
       "sections": [
         {
@@ -375,28 +366,28 @@
             "zh": "解决的问题"
           },
           "body": {
-            "en": "How can an evaluation workflow show which predictions to accept, which to review and what evidence supports the policy? Marginloom connects model outputs to inspectable metrics, review decisions and saved reports.",
-            "zh": "评估流程如何说明哪些预测可以接受、哪些需要复核，以及决策依据是什么？Marginloom 将模型输出与可检查的指标、复核决定和保存的报告连接起来。"
+            "en": "When is an AI prediction reliable enough to use, and when should a person check it? Marginloom helps you inspect mistakes and see the evidence behind that choice.",
+            "zh": "AI 的判断什么时候值得采用，什么时候应该请人检查？Marginloom 帮助你查看错误，并理解作出这个选择的依据。"
           }
         },
         {
           "heading": {
-            "en": "Implemented workflow",
-            "zh": "已实现的流程"
+            "en": "What you can do",
+            "zh": "可以怎样使用"
           },
           "body": {
-            "en": "The repository implements temperature scaling, risk-coverage and threshold exploration, validated JSON prediction imports, saved run and policy snapshots, local ensemble inference, persisted review notes and JSON evidence exports. A separate companion experiment demonstrates segmentation on synthetic images.",
-            "zh": "仓库实现了温度缩放、风险与覆盖率分析、阈值探索、JSON 预测导入校验、运行与策略快照、本地集成模型推理、复核备注持久化及 JSON 证据导出。另有独立实验在合成图像上演示分割。"
+            "en": "Choose an included example or import prediction results. Explore where the model is confident or often wrong, compare different rules for human review, record notes and export a report. A separate illustrative viewer shows how image-analysis results can be inspected.",
+            "zh": "选择内置例子或导入预测结果，查看模型在哪些地方有把握、哪些地方容易出错。比较不同的人工复核规则，记录意见并导出报告。另有示意性图像查看器，帮助理解图像分析结果。"
           }
         },
         {
           "heading": {
-            "en": "Engineering approach",
-            "zh": "工程实现"
+            "en": "Keep decisions understandable",
+            "zh": "让决策过程清楚可查"
           },
           "body": {
-            "en": "Java 21 Servlet controllers, JDBC/MySQL persistence and native HTML/CSS/JavaScript form a Maven WAR deployed on Tomcat 9. Python and scikit-learn remain optional offline research tools; the live application runs in Java.",
-            "zh": "Java 21 Servlet 控制器、JDBC/MySQL 持久化和原生 HTML/CSS/JavaScript 组成 Maven WAR，并部署于 Tomcat 9。Python 与 scikit-learn 仅用于可选的离线研究复现；线上应用由 Java 运行。"
+            "en": "Separate workspaces keep evaluations and review notes organised. Saved settings and reports help you revisit which choices were made and why.",
+            "zh": "独立工作空间帮助整理评估和复核意见。保存的设置与报告让你之后能够回看当时做了什么选择，以及为什么这样选择。"
           }
         },
         {
@@ -405,21 +396,21 @@
             "zh": "证据与范围"
           },
           "body": {
-            "en": "The public MIT-licensed repository includes Java source, trained-model exports, documentation and tests. The Java Web migration passed numeric-parity and real Tomcat HTTP tests, MySQL isolation and quota checks, and GitHub Actions run 39248477725. Existing SQLite records were migrated to MySQL and checked against the backup.",
-            "zh": "公开 MIT 许可仓库包含 Java 源码、已训练模型导出、文档及测试。Java Web 迁移通过了数值一致性、真实 Tomcat HTTP、MySQL 隔离与配额检查，以及 GitHub Actions 任务 39248477725。原 SQLite 记录已迁移至 MySQL，并与备份核对。"
+            "en": "The public project includes example models, evaluation material and documented checks for calculations, separate workspaces, review notes and exports. Included examples and the image viewer use synthetic data.",
+            "zh": "公开项目包含示例模型、评估材料，以及计算、独立工作空间、复核意见和导出功能的检查记录。内置例子与图像查看器使用合成数据。"
           }
         }
       ],
       "outcomes": {
         "en": [
-          "An inspectable prototype spanning evaluation, policy exploration and human review.",
-          "Public source, generated model artifacts and documented reproduction steps.",
-          "Java Web migration with numeric parity, real Tomcat/MySQL checks and verified data preservation."
+          "A practical way to explore AI mistakes and decide when human review is helpful.",
+          "Review notes, saved decision settings and exportable evidence reports.",
+          "Public source and documented examples for revisiting the work."
         ],
         "zh": [
-          "覆盖评估、策略探索及人工复核的可检查原型。",
-          "公开源码、生成的模型产物和复现步骤文档。",
-          "完成 Java Web 迁移，并核验数值一致性、Tomcat/MySQL 流程和原有数据保留。"
+          "帮助理解 AI 的错误，以及哪些情况值得人工复核。",
+          "提供复核意见、保存的决策设置和可导出的证据报告。",
+          "提供公开源码与示例说明，方便回看和复查。"
         ]
       },
       "limits": {
@@ -435,8 +426,8 @@
         ]
       },
       "evidence": {
-        "en": "Public Java Web repository, successful GitHub Actions run 39248477725 and verified HTTPS workflows on 19 October 2026.",
-        "zh": "依据公开 Java Web 仓库、成功的 GitHub Actions 任务 39248477725，以及 2026 年 10 月 19 日核验的 HTTPS 流程。"
+        "en": "Public project source, example models and documented checks support the evaluation, human-review and reporting workflow.",
+        "zh": "公开项目源码、示例模型和检查记录，支持评估、人工复核与报告流程的说明。"
       },
       "live_url": "https://marginloom.zhongjiehuang.com"
     },
@@ -557,8 +548,8 @@
         "zh": "OutcomeLab：交互式 AI 可靠性实验室"
       },
       "subtitle": {
-        "en": "Personal software project · Online learning and evaluation",
-        "zh": "个人软件项目 · 在线学习与模型评估"
+        "en": "Personal software project · Learn from AI mistakes",
+        "zh": "个人软件项目 · 从 AI 的错误中学习"
       },
       "period": "2026",
       "category": "software",
@@ -568,55 +559,46 @@
         "zh": "可运行的个人原型"
       },
       "summary": {
-        "en": "A Java Web lab for challenging a classifier, applying real online corrections, and comparing clean and shifted evaluations with isolated sessions, rollback and JSON/CSV exports.",
-        "zh": "基于 Java Web 的交互式 AI 可靠性实验室：挑战分类器、执行真实在线纠正，并在独立会话中比较原始与偏移数据评估，支持回滚及 JSON/CSV 导出。"
+        "en": "An interactive lab for trying examples, correcting AI mistakes and checking whether those corrections help on new examples. Compare results, undo changes and export your experiment.",
+        "zh": "一个可以动手体验的 AI 实验室：输入例子、纠正 AI 的错误，再看它面对新例子时是否有改善。支持比较结果、撤销修改和导出实验。"
       },
       "role": {
         "en": "Personal portfolio project, developed with AI assistance",
         "zh": "个人作品集项目，使用 AI 辅助开发"
       },
-      "stack": [
-        "Java 21",
-        "Servlet 4",
-        "Maven",
-        "Tomcat 9",
-        "JDBC / MySQL",
-        "HTML / CSS / JavaScript",
-        "JUnit",
-        "GitHub Actions"
-      ],
+      "stack": [],
       "live_url": "https://outcomelab.zhongjiehuang.com",
       "repository": "https://github.com/zhjpersonal83-cell/outcomelab",
       "sections": [
         {
           "heading": {
-            "en": "Break it. Teach it. Measure it.",
-            "zh": "挑战、纠正、衡量。"
+            "en": "Try, correct, compare",
+            "zh": "尝试、纠正、比较"
           },
           "body": {
-            "en": "Try a synthetic support ticket, correct its category, then inspect measured changes in accuracy, confidence, calibration and the confusion matrix. Corrections update a real online classifier in an isolated session; reset and rollback make experiments reversible.",
-            "zh": "输入合成客服工单并纠正分类，查看准确率、置信度、校准指标与混淆矩阵的实际变化。每次纠正都会更新会话内独立的在线分类器，并支持重置与回滚。"
+            "en": "Try a sample support message or write your own. Inspect the category the AI chooses, teach it a correction, then compare its results on examples it has not seen. A correction changes the model; it does not guarantee a better result.",
+            "zh": "试用示例客服消息，也可以自己写一条。查看 AI 选择的类别，告诉它哪里错了，再比较它对未见过的例子的判断。纠正确实会改变模型，但不保证结果一定变好。"
           }
         },
         {
           "heading": {
-            "en": "Reproducible engineering",
-            "zh": "可复现的工程实现"
+            "en": "Explore without losing your starting point",
+            "zh": "放心尝试，也能回到起点"
           },
           "body": {
-            "en": "Java 21 Servlet controllers and a native HTML/CSS/JavaScript interface are packaged as a Maven WAR on Tomcat 9. JDBC/MySQL supplies an immutable, checksum-verified baseline model; corrections and model snapshots remain in temporary memory. Tests compare predictions and learning updates with the original implementation and check isolation, exports and exact rollback.",
-            "zh": "Java 21 Servlet 控制器与原生 HTML/CSS/JavaScript 界面打包为 Maven WAR，部署于 Tomcat 9。JDBC/MySQL 提供不可变且经过校验的基线模型；纠正记录和模型快照仍仅保存在临时内存中。测试对照原实现的预测与学习更新，并检查隔离、导出和精确回滚。"
+            "en": "Each experiment has a separate temporary workspace. Undo a correction or reset the experiment to compare what changed. Export the results when you want to keep a record; experiment text and corrections are not saved as a permanent training history.",
+            "zh": "每次实验都有独立的临时空间。你可以撤销一次纠正，或重置实验来比较变化。需要留存时可以导出结果；输入内容和纠正记录不会被保存为永久训练历史。"
           }
         }
       ],
       "outcomes": {
         "en": [
-          "Real incremental learning with per-session isolation and model rollback.",
-          "Inspectable clean and shifted evaluation, with reproducible experiment exports."
+          "Hands-on experiments showing how feedback changes an AI classifier.",
+          "Results you can compare, undo and export for later review."
         ],
         "zh": [
-          "真实增量学习、会话隔离与模型回滚。",
-          "可检查的原始与偏移评估，以及可复现的实验导出。"
+          "通过动手实验，观察反馈如何改变 AI 的分类判断。",
+          "可以比较结果、撤销修改，并导出记录供之后查看。"
         ]
       },
       "limits": {
@@ -630,8 +612,8 @@
         ]
       },
       "evidence": {
-        "en": "Public Java Web repository, successful GitHub Actions run 39248817565 and verified HTTPS learning/rollback workflow on 19 October 2026.",
-        "zh": "依据公开 Java Web 仓库、成功的 GitHub Actions 任务 39248817565，以及 2026 年 10 月 19 日核验的 HTTPS 学习与回滚流程。"
+        "en": "Public project source and documented checks cover predictions, corrections, separate experiment workspaces, exports and undo behaviour. The examples use synthetic data.",
+        "zh": "公开项目源码及检查记录覆盖预测、纠正、独立实验空间、导出和撤销功能。演示使用合成数据。"
       }
     }
   ],
@@ -777,17 +759,14 @@
         "zh": "评估软件与可复现工作流"
       },
       "description": {
-        "en": "Connecting calibration, policy exploration, human review and saved evidence through Java Servlet APIs and workspace-scoped MySQL persistence.",
-        "zh": "通过 Java Servlet API 与按工作空间隔离的 MySQL 持久化，连接校准、策略探索、人工复核及可保存的证据。"
+        "en": "Making AI evaluation easier to inspect through clear comparisons, human review notes and saved evidence reports.",
+        "zh": "通过清楚的结果比较、人工复核意见和保存的证据报告，让 AI 评估更容易理解和检查。"
       },
       "tools": [
-        "Java 21",
-        "Servlet 4",
-        "Maven",
-        "Tomcat",
-        "JDBC / MySQL",
-        "HTML / CSS / JavaScript",
-        "GitHub Actions"
+        "Model evaluation",
+        "Human review",
+        "Evidence reports",
+        "Reproducible experiments"
       ],
       "basis": {
         "en": "Marginloom personal prototype, developed with AI assistance",

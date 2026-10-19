@@ -1,24 +1,24 @@
 {
   "profile_reviewed": "2026-10-19",
   "source": {
-    "profile_sha256": "e8c9f4f673f68c92c153c2da857dc1e9570f94c18eee3c8a72021fc0f1f88998",
-    "builder_sha256": "fe3de65b02eebb46a751c179fbe40d8e4e74a466da57cc3d096cbd016e626c9d",
+    "profile_sha256": "4c60a592ca83913135dec88a3e20d34b6211578b8e8b24b6d03c60c73d14d5b5",
+    "builder_sha256": "315d1fdd17680dacb694e37f51861157aa1d064e92ece30c636cb15e64f998ba",
     "fonts_sha256": {
-      "regular": "b4f914755853dfba8b962943146cf9bff1000ebc0227b88e57355e2354ca15a7",
-      "semibold": "897de42e08df41f61feb3cdab7d07300219ac62431ec0cada4ad59060e543bd8"
+      "regular": "edff008564f4e1abedf60ef484a77c696402fe88c4b6f1e1103e7d00af0ab6d7",
+      "semibold": "9396adc045ba08c952575411929fb8fbfba548c0556791f2397e9769b6d0c5d7"
     }
   },
   "outputs": {
     "en": {
       "file": "static/files/zhongjie-huang-cv-en.pdf",
-      "sha256": "5ea0b6b35a78fa0fbf1318e11dcc152660346611caff58568b85a49e0011e0b3",
-      "bytes": 28313,
+      "sha256": "23b7b2fb626a75f157cb93f559e28e9180dd8726ac6130b50a492c7d93086aca",
+      "bytes": 28277,
       "pages": 2
     },
     "zh": {
       "file": "static/files/zhongjie-huang-cv-zh.pdf",
-      "sha256": "6d805ed1ed44ea3ca967e46a0d3d7ac292f1900d38a16838c5ab9f8f06db9fef",
-      "bytes": 106320,
+      "sha256": "54701823c9f957167c8ed98511d0c444529b8f2ff70667d2be37d29ab1973e8a",
+      "bytes": 105825,
       "pages": 2
     }
   }

@@ -397,7 +397,7 @@ class Builder:
         body += '</div><aside class="side-note"><dl class="fact-list">'
         for name, value in [(p.l('status'), p.t(item['status_label'])), (p.l('role'), p.t(item['role'])), (p.l('period'), p.t(item['period']))]:
             body += '<div><dt>' + esc(name) + '</dt><dd>' + esc(value) + '</dd></div>'
-        body += '</dl><h2>' + esc(p.l('tools')) + '</h2>' + p.tags(item['stack']) + '</aside></div></section>'
+        body += '</dl>' + ('<h2>' + esc(p.l('tools')) + '</h2>' + p.tags(item['stack']) if item['stack'] else '') + '</aside></div></section>'
         body += '<section class="section alt"><div class="container grid two"><div class="prose"><h2>' + esc(p.l('outputs')) + '</h2>' + bullet_list(p.t(item['outcomes'])) + '</div><div class="prose"><h2>' + esc(p.l('limits')) + '</h2>' + bullet_list(p.t(item['limits'])) + '</div></div></section>'
         body += '<section class="section"><div class="container"><div class="notice"><h2>' + esc(p.l('evidence')) + '</h2><p>' + esc(p.t(item['evidence'])) + '</p>'
         if item.get('repository'):
